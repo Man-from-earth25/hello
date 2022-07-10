@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fy": "git status && git add ."
+    "fy": "git status && git add . && echo \"Error: Please 🥺🥺🥺 add A Commit Manually\" && git commit -m \"Automated Commit By Friday\" && git push g main" 
   },
   "repository": {
     "type": "git",

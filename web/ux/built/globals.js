@@ -1,22 +1,20 @@
 'use-strick';
-"use strict";
-exports.__esModule = true;
 // Imports
-var dom_js_1 = require("./dom.js");
-var navbar_js_1 = require("./navbar.js");
-var index_js_1 = require("./page/player_name/index.js");
-var index_js_2 = require("./page/setting/index.js");
-var body = (0, dom_js_1.q)('body');
-var html = (0, dom_js_1.q)('body');
-var many_elements = (0, dom_js_1.qa)('h1');
-var button = (0, dom_js_1.q)('button') || (0, dom_js_1.q)('.sound');
-var audio = new Audio();
+import { q, qa, CLICK_CLEANER_CODE } from './dom.js';
+import { navbar } from './navbar.js';
+import { player_name } from './page/player_name/index.js';
+import { setting } from './page/setting/index.js';
+let body = q('body');
+let html = q('body');
+let many_elements = qa('h1');
+let button = q('button') || q('.sound');
+const audio = new Audio();
 audio.src = '../media/sound.mp3';
-var opLog1 = function () {
+const opLog1 = () => {
     audio.play();
     console.log('Audio played');
 };
-var opLog2 = function () {
+const opLog2 = () => {
     console.log('H1 Clicked');
 };
 // Multiverse Click Testing 
@@ -26,14 +24,14 @@ var opLog2 = function () {
 // })
 if (body == null)
     console.log('Body Is Needed');
-(0, dom_js_1.CLICK_CLEANER_CODE)({
+CLICK_CLEANER_CODE({
     element: body,
     CLICK_FUNCTION: opLog1
 });
 console.log('Javascript is Working');
-(0, navbar_js_1.navbar)();
-(0, index_js_1.player_name)();
-(0, index_js_2.setting)();
+navbar();
+player_name();
+setting();
 // Local Storage 
 localStorage.setItem('Name', 'Emon');
 // console.log('The Player Name From LocalStorage is',localStorage.getItem('Name'));
