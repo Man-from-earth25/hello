@@ -1,22 +1,41 @@
-"use strict";
-exports.__esModule = true;
-exports.player_name = void 0;
 // Imports
-var dom_js_1 = require("../../dom.js");
-var player_name_page = (0, dom_js_1.q)('.profile_name_page');
+import { q,qa,CLICK_CLEANER_CODE } from '../../dom.js';
+
+
+let player_name_page = q('.profile_name_page')
+
 // Functions
-if (player_name_page == null)
-    ;
-var player_name = function () {
+if(player_name_page == null);
+const player_name = () => {
+    
     // Variables
-    var player_name_submit = (0, dom_js_1.q)('.player_name_submit') || null;
-    if (player_name_submit == null)
-        return;
-    player_name_submit.addEventListener('click', function () {
-        var profile_name_value = (0, dom_js_1.q)('.player_name_input').value;
-        console.log('The Player Name Is', profile_name_value);
-        localStorage.setItem('Player_Name', profile_name_value);
+    const player_name_submit = q('.player_name_submit') || null;
+
+    
+    if(player_name_submit == null) return;
+    player_name_submit.addEventListener('click',()=> {
+        
+        let profile_name_value = q('.player_name_input').value;
+        console.log('The Player Name Is',profile_name_value);
+        localStorage.setItem('Player_Name',profile_name_value);
         console.log(localStorage.getItem('Player_Name'));
-    });
-};
-exports.player_name = player_name;
+        
+    })
+    
+    
+}
+
+
+
+
+
+
+
+
+
+// Exports
+export{
+    
+    player_name
+    
+}
