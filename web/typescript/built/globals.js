@@ -9,7 +9,7 @@ let html = q('body');
 let many_elements = qa('h1');
 let button = q('button') || q('.sound');
 const audio = new Audio();
-audio.src = '../media/sound.mp3';
+audio.src = '../media/N56BNFY-click.mp3';
 const opLog1 = () => {
     audio.play();
     console.log('Audio played');
