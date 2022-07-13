@@ -7,6 +7,8 @@ import { navbar } from './navbar.js';
 import { player_name } from './page/player_name/index.js';
 import { setting } from './page/setting/index.js';
 
+
+// Varibles
 let body = q('body');
 let html = q('body');
 let many_elements = qa('h1');
@@ -16,18 +18,16 @@ audio.src = '../media/N56BNFY-click.mp3';
 
 
 const opLog1 = ()=>{
-    audio.play();
-    console.log('Audio played');
+    // audio.play();
+    // console.log('Audio played');
 }
 const opLog2 = ()=>{
     console.log('H1 Clicked');
 }
 // Multiverse Click Testing 
 // CLICK_CLEANER_CODE({
-    
 //     element: many_elements,
 //     CLICK_FUNCTION : opLog2
-    
 // })
 if(body == null) console.log('Body Is Needed');
 CLICK_CLEANER_CODE({
@@ -39,7 +39,7 @@ CLICK_CLEANER_CODE({
 
 
 
-
+// Function Inisilization
 console.log('Javascript is Working');
 navbar();
 player_name();
@@ -48,10 +48,9 @@ setting();
 
 // Local Storage 
 localStorage.setItem('Name','Emon');
-// console.log('The Player Name From LocalStorage is',localStorage.getItem('Name'));
-// console.log(ethers);
 
 
+// Ethereum Detection
 if(!window.ethereum){
 }
 else{

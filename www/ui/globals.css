@@ -62,6 +62,7 @@ input{
 ::-webkit-scrollbar{
     
     display: none;
+    
 }
 .icon-visible,
 .profile_close {
@@ -75,7 +76,7 @@ ul,li,h1,h2,h3,h5,h5,h6{
 }
 body{
     
-    
+    /* overflow: hidden; */
   
     position: relative;
     background: var(--body-bg);

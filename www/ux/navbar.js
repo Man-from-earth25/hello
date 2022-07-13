@@ -5,7 +5,7 @@ import { q,qa,CLICK_CLEANER_CODE } from './dom.js';
 let navbar_element = q('.navbar');
 
 // Functions
-if(navbar_element == null) console.log('Navbar Not Found');;
+// if(navbar_element == null) console.log('Navbar Not Found');
 const navbar = () => {
     
     
