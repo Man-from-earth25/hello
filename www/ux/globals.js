@@ -26,14 +26,14 @@ const opLog2 = ()=>{
 }
 // Multiverse Click Testing 
 // CLICK_CLEANER_CODE({
-//     element: many_elements,
-//     CLICK_FUNCTION : opLog2
+//     ELEMENT: many_elements,
+//     FUNCTION : opLog2
 // })
 if(body == null) console.log('Body Is Needed');
 CLICK_CLEANER_CODE({
     
-    element: body,
-    CLICK_FUNCTION : opLog1
+    ELEMENT: body,
+    FUNCTION : opLog1
     
 })
 

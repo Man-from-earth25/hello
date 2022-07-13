@@ -2,25 +2,25 @@
 let element_length;
 
 // Functions
-const CLICK_CLEANER_CODE = ({ element, CLICK_FUNCTION }) => {
+const CLICK_CLEANER_CODE = ({ ELEMENT, FUNCTION }) => {
     
-    element_length = element.length;
+    element_length = ELEMENT.length;
     
     if (element_length > 1) {
         
-        if(element == null) console.log('Click Listner');;
-        element.forEach((elements) => {
+        if(ELEMENT == null) console.log('Click Listner');;
+        ELEMENT.forEach((elements) => {
             
             if(elements == null) console.log('Click Listner');;
-            elements.addEventListener('click', CLICK_FUNCTION);
+            elements.addEventListener('click', FUNCTION);
             
             
         });
         
     } else {
         
-        if(element == null) console.log('Click Listner');;
-        element.addEventListener('click', CLICK_FUNCTION);
+        if(ELEMENT == null) console.log('Click Listner');;
+        ELEMENT.addEventListener('click', FUNCTION);
         
     }
 }
