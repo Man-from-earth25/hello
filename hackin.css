@@ -15,10 +15,81 @@ body{
 
 
 
-canvas{
+/* canvas{
     
+    display: var(--canvas-display);
+    animation: none;
     background: #27293E;
+    border: var(--canvas-border);
+    box-shadow: var(--canvas-boxShadow);
+    border-radius: var(--canvas-borderRadius);
+    color: var(--canvas-color);
+    cursor: var(--canvas-cursor);
+    clip: var(--canvas-clip);
+    font: var(--canvas-font);
+    filter: var(--canvas-filter);
+    transform: var(--canvas-transform);
+    transition: var(--canvas-transition);
+    perspective: var(--canvas-perspective);
+    overflow: var(--canvas-overflow);
+    opacity: var(--canvas-opacity);
     
-    height: 500px;
-    width: 100%;
+    margin: var(--canvas-margin);
+    padding: var(--canvas-paddin);
+    
+    position: var(--canvas-position);
+    top: var(--canvas-top);
+    left: var(--canvas-left);
+    
+    min-height: var(--canvas-minHeigh);
+    max-height: var(--canvas-maxHeight);
+    min-width: var(--canvas-minWidth);
+    max-width: var(--canvas-maxWídth);
+    height: var(--canvas-height);
+    width: var(--canvas-width);
+    
+    z-index: var(--canvas-zIndex);
+} */
+canvas{
+
+    background: #27293E;
+    display: var(--canvas-display);
+    flex: var(--canvas-flex);
+    justify-content: var(--canvas-justifyContent);
+    align-items: var(--canvas-alignItems);
+    column-gap: var(--canvas-columnGap);
+    row-gap: var(--canvas-rowGap);
+    grid: var(--canvas-grid);
+    grid-gap: var(--canvas-gridGap);
+    animation: none;
+    border: var(--canvas-border);
+    box-shadow: var(--canvas-boxShadow);
+    border-radius: var(--canvas-borderRadius);
+    color: var(--canvas-color);
+    cursor: var(--canvas-cursor);
+    clip: var(--canvas-clip);
+    font: var(--canvas-font);
+    filter: var(--canvas-filter);
+    transform: var(--canvas-transform);
+    transition: var(--canvas-transition);
+    text-align: var(--canvas-textAlign);
+    perspective: var(--canvas-perspective);
+    overflow: var(--canvas-overflow);
+    opacity: var(--canvas-opacity);
+    
+    margin: var(--canvas-margin);
+    padding: var(--canvas-paddin);
+    
+    position: var(--canvas-position);
+    top: var(--canvas-top);
+    left: var(--canvas-left);
+    
+    min-height: var(--canvas-minHeigh);
+    max-height: var(--canvas-maxHeight);
+    min-width: var(--canvas-minWidth);
+    max-width: var(--canvas-maxWídth);
+    height: var(--canvas-height);
+    width: var(--canvas-width);
+    
+    z-index: var(--canvas-zIndex);
 }
