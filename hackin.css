@@ -2,3 +2,13 @@ body{
     
     background: #000000;
 }
+
+
+
+canvas{
+    
+    background: #27293E;
+    
+    height: 500px;
+    width: 100%;
+}
