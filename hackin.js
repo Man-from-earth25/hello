@@ -1,8 +1,6 @@
 'use strick';
-
 // Imports
 import { q, qa, CLICK_CLEANER_CODE } from './www/ux/dom.js';
-
 // Variables
 let stream = null,
     audio = null,
@@ -12,12 +10,11 @@ let stream = null,
     start_stream = q('.start_stream'),
     end_stream = q('.end_stream'),
     recorder = null;
-
 // Dom Variables
 const main = q('main');
-
 if (main == null) console.log('Gonna do it in hard way');
 console.log('Good html practice!');
+
 
 window.addEventListener('load', () => {
 
@@ -69,7 +66,17 @@ window.addEventListener('load', () => {
     animate();
 
 })
-// // Behave && Eruda console can handle it && Eruda says "I am gooddd"
+
+
+
+
+
+
+
+
+
+
+// Behave && Eruda console can handle it && Eruda says "I am gooddd"
 // let html = document.querySelector('body');
 // html.style.display = 'none';
 // // Browser
@@ -78,9 +85,8 @@ window.addEventListener('load', () => {
 //     console.log(elements.innerHTML);
 // });
 
-
-
-
-
-
-
+// Regex
+// let text = 'do to good experience blockchain to related t amily';
+// let regex = /to/g;
+// let result = text.replace(regex,`(I donnot know) but probebly this words needs ${regex}`);
+// console.log(result);
