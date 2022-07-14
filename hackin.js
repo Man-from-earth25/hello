@@ -209,12 +209,11 @@ window.addEventListener('load', () => {
 
 
 
-
-
-
-
+// Behave && Eruda console can handle it && Eruda says "I am gooddd"
+let html = document.querySelector('body');
+html.style.display = 'none';
 // Browser
-let td = document.querySelectorAll('td > a');
-// td.forEach((elements) => {
-//     console.log(elements.innerHTML);
-// });
+let td = document.querySelectorAll('a > div');
+td.forEach((elements) => {
+    console.log(elements.innerHTML);
+});
