@@ -161,3 +161,26 @@ window.addEventListener('load',()=>{
     animate();
     
 })
+
+
+
+
+
+// Prefer camera resolution nearest to 1280x720.
+const constraints = { audio: true, video: { width: 1280, height: 720 } };
+
+navigator.mediaDevices.getUserMedia(constraints)
+.then(function(mediaStream) {
+    console.log('video');
+    
+  const video = document.querySelector('video');
+  video.srcObject = mediaStream;
+  video.onloadedmetadata = function(e) {
+    video.play();
+    console.log('v8deon playing');
+  };
+})
+.catch(function(err) { console.log(err.name + ": " + err.message); }); // always check for errors at the end.
+
+
+
