@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api',
+    
     'rest_framework',
     'corsheaders',
     'ingredients',
@@ -48,10 +48,10 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework_simplejwt',    
     'rest_framework_simplejwt.token_blacklist',    
-    # 'video',
+    'api',
     'home',
     'todo',
-    'upload',
+   
 
 ]
 
@@ -90,29 +90,22 @@ WSGI_APPLICATION = 'agenda_django_server.wsgi.application'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+
+ DATABASES = {
+   'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        # 'USER': '',
-        # 'PASSWORD': '',
-        # 'HOST': '',
-        # 'PORT': '',
-        
+    },
+    'mysql': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sample',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 
