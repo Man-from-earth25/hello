@@ -1,0 +1,313 @@
+/* Imports🤗🤗🤗 */
+/* @use "./components"as *; */
+/* @use "./mb"as *; */
+/* @use "./pc"as *; */
+/* @use "./src" as *; */
+/* @import "./agenda"; */
+
+
+
+
+/*              #Starting😎😎😎 || Mobile 📲📲📲 firts || Global                 */
+::-webkit-scrollbar{
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#pc_navbar_top,#pc_navbar_left{
+    display: none;
+}
+/*                                   Displays                                    */
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #FFFFFF;
+
+
+}
+
+
+    /* @include navbar2-mb; */
+    /* .mb-navbartop-icons{
+        
+        background: #F915FF;
+        color: #6EFF15;
+        font-size: 1.3rem;
+        
+        
+    } */
+    /* .mb-navbartop-icons:hover{
+        
+        color: #1515FF;
+    } */
+    /* .mb_navbarbottom_icons{
+        font-size: 1.7rem;
+    } */
+
+main{
+    
+    min-height: 100vh;
+    width: 100%;
+    
+    /*     for now      */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    
+}
+
+
+footer{
+    
+    background: #B2FFC7;
+    
+    
+}
+#mb_navbartop_scroll-container{
+            
+        display: grid;
+        grid-template-rows: 35px;
+        /* background: #2DFF76; */    
+        
+        
+        margin: 0;
+        padding: 0;
+    
+}
+
+/* Javascript power🤠🤠🤠 puspa kabhi jhukaga nahi!!! */
+
+
+.pi_eft1{
+    
+    /* background: transparent; */
+    
+    
+    width: 100%;
+
+    
+    position: fixed;
+    top: 0rem;
+    
+    /* filter: blur(1px); */
+    /* transition-delay: 0.5s; */
+    
+background: #e0e0e0;
+box-shadow:  18px 18px 36px #5a5a5a,
+             -18px -18px 36px #ffffff;
+    
+}
+@keyframes pi_eft2 {
+    0% {
+        background-color:red;
+        top:0px;
+        
+    }
+    25%{
+        background-color:yellow;
+          top:-0.5rem;
+        
+    }
+    50%{
+        background-color:blue;
+          top:0.9rem;
+        
+    }
+    100% {
+        background-color:red; 
+        top:-1.5rem;
+        
+    }
+}
+
+
+
+.pi_eft2{
+    
+    color: #9200FF;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                      pc                                     */
+@media (min-width: 900px) {
+    #mb_navbar_top,#mb_navbar_bottom{
+        display: none;
+    }
+    body{
+        /* display: grid; */
+        /* grid-template-rows: 1fr; */
+        /* grid-template-columns: 10% 90%; */
+        
+        
+        /* background: red; */
+        color: yellow;
+        
+    }
+
+    /* The sidebar menu */
+    /* @include navbar2-pc; */
+    
+
+
+    main {
+        background: #FFFFFF;
+        display: block;
+        
+        
+        min-height: 100vh; 
+        width: 90%;
+        
+        
+        margin: 0;
+        padding: 0;
+        
+        
+        
+        position: relative;
+        top: 5vh;
+        left: 10%;
+    }
+
+    footer {
+        
+        background: #E0E3FF;
+        color: #000;
+        
+        padding: 2rem;
+        margin: 0;
+        
+        
+        /* height: 10vh; */
+        width: 90%;
+        
+        
+        position: relative;
+        left: 10%;
+        
+        /* for now only */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+        text-align: center;
+        
+    }
+    
+    
+    
+    
+    
+    
+    /* Using it in Pc 🍼🐥🍼🐥  🤗🤗🤗 */
+    /* @include displays-pc; */
+
+}
+/*                               End pc                                        */
+
+
+
+
+
+/*                              Landscape                                      */
+@media (min-width: 900px) and (max-height: 423px){
+    #pc_navbar_left{
+        
+        width: 7%;
+        height: 100vh;
+        
+        top: 4.6rem;
+        
+        padding-bottom: 9rem;
+        
+        
+    }  
+    #pc_navbar_left ul li {
+        width: 4.2rem;
+        /* background: red; */
+        
+    }
+    #pc_navbar_left ul li:hover,#pc_navbar_left ul li:focus{
+        
+        font-size: 3rem;
+        border-right: 3px solid #26283D;
+    }    
+    
+    .pc-navbartop-icons{
+        font-size: 1rem;
+    }
+    #menu-icon{
+        font-size: 1rem;
+    }
+    #pc_navbar_left ul{
+        margin-bottom: 9vh;
+        
+        height: 400vh;
+    }
+    #pc_navbar_left ul li{
+        font-size: 2rem;
+        
+        margin-top: 1.5rem;
+        
+    }    
+    main{
+        margin-left: 3rem;
+        margin-top: 4vh;
+    }
+    footer{
+        height: 10vh;
+        margin-left: 4.2rem;
+    }
+}
+
+
+
+/* Using it in mobile 📱📱📱📲📲📲 🤗🤗🤗 */
+/* @include navbar1; */
+/* @include displays-mb; */
+
+
+
+
+
+
+/*              Ending😎😎😎 || Mobile 📲📲📲 firts || Global                 */
+                                                                                                                                                                                                                            
