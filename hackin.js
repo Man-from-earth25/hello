@@ -253,21 +253,18 @@ window.addEventListener('load', () => {
 
 
 
-let bn = document.querySelectorAll('.MuiPaper-root:nth-child(1),..MuiPaper-root:nth-child(1) > *');
-bn.forEach((elements) => {
-    console.log(elements.length);
-});
+// let bn = document.querySelectorAll('.MuiPaper-root:nth-child(1),..MuiPaper-root:nth-child(1) > *');
+// bn.forEach((elements) => {
+//     console.log(elements.length);
+// });
 // console.log(bn);
-
-
 let body = q('body');
 let sound = new Audio;
-
 sound.src = '/click.mp3';
-// sound.play();
-
 const logger = () => {
     console.log('logged');
+    sound.play();
+    
 }
 CLICK_CLEANER_CODE({
     
@@ -275,5 +272,3 @@ CLICK_CLEANER_CODE({
     FUNCTION : logger
     
 })
-
-body.click();
