@@ -224,8 +224,16 @@ window.addEventListener('load', () => {
 
 
 
-
-
+// Regex
+// let text = 'do to good experience blockchain to related t amily';
+// let regex = /to/g;
+// let result = text.replace(regex,`(I donnot know) but probebly this words needs ${regex}`);
+// console.log(result);
+// Regex
+// let text = 'do to good experience blockchain to related t amily';
+// let regex = /to/g;
+// let result = text.replace(regex,`(I donnot know) but probebly this words needs ${regex}`);
+// console.log(result);
 
 // Behave && Eruda console can handle it && Eruda says "I am gooddd"
 // let html = document.querySelector('body');
@@ -236,8 +244,36 @@ window.addEventListener('load', () => {
 //     console.log(elements.innerHTML);
 // });
 
-// Regex
-// let text = 'do to good experience blockchain to related t amily';
-// let regex = /to/g;
-// let result = text.replace(regex,`(I donnot know) but probebly this words needs ${regex}`);
-// console.log(result);
+
+// let bn = document.querySelectorAll('.MuiPaper-root:nth-child(1)');
+// bn.forEach((elements) => {
+//     console.log(elements.length);
+// });
+
+
+
+
+let bn = document.querySelectorAll('.MuiPaper-root:nth-child(1),..MuiPaper-root:nth-child(1) > *');
+bn.forEach((elements) => {
+    console.log(elements.length);
+});
+// console.log(bn);
+
+
+let body = q('body');
+let sound = new Audio;
+
+sound.src = '/click.mp3';
+// sound.play();
+
+const logger = () => {
+    console.log('logged');
+}
+CLICK_CLEANER_CODE({
+    
+    ELEMENT : body,
+    FUNCTION : logger
+    
+})
+
+body.click();
