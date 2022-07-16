@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background: #9900EF !important; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*                      Navbar Bottom 🤗🤗🤗                     */
+#pro-navbar-bottom {
+    /* filter: brightness(100%); */
+    background: #E7E8F3;
+    /* border: 1px solid #B4BABB; */
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 40px 40px 1fr 40px 40px;
+    place-items: center;
+
+
+    height: 3rem;
+    width: 93%;
+    position: fixed;
+    bottom: 2rem;
+    left: 3.3%;
+
+
+    padding: 0 1.5rem;
+
+
+    z-index: 3;
+}
+
+.pnbli {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#pnbli3 {
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 1) 11%, rgba(255, 0, 140, 0.9898148176405165) 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    border-radius: 50%;
+
+
+    height: 3rem;
+    width: 3rem;
+
+    z-index: 3;
+}
+
+#pnbli-circle {
+
+
+    background: #E7E8F3;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    border-radius: 50%;
+
+    height: 4.5rem;
+    width: 4.5rem;
+
+    position: fixed;
+    bottom: 1.4rem;
+    left: 40%;
+
+
+    z-index: 1;
+}
+
+.pnbli-icon-add {
+
+    color: #FFFFFF;
+
+    font-size: 2rem;
+    font-style: bold;
+
+}
+
+.pnbli img {
+
+
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+#pro-navbarbottom-container{
+    
+
+}
+
+
+
+
+
+
+/*                          Navbar Top🔝                                */
+#pro-navbar-top {
+    /* background: red; */
+    background: #FFFFFF;
+    filter: saturate(300%);
+    border: 0.8px solid #E2E2E2;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 1fr 40px 40px 40px;
+
+    min-height: 2.7rem;
+    width: 100%;
+
+    padding: 0 0.5rem;
+
+    /* position: fixed; */
+    /* top: 0; */
+    
+    z-index: 5;
+}
+
+.pntli {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+
+}
+
+
+
+
+
+main {
+    
+    /* position: relative; */
+    /* top: 7vh; */
+    
+    
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+/*                          Footer🔝                                */
+footer{ 
+    
+    background: transparent !important;
+    min-height: 10vh;
+    width: 100%;
+    
+    
+} 
+
+/*                          Main footer                            */
+#pro_footer_main-contant {
+
+    /* Created with https://www.css-gradient.com */
+    border-bottom: 0.8px solid #FFFFFF;
+    background: #9900EF;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 4fr));
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 1rem;
+
+
+    min-height: 5rem;
+    width: 100%;
+
+    padding: 1rem;
+    /* margin-bottom: 1rem; */
+
+
+    /* position: relative; */
+    /* bottom: 1rem; */
+
+
+    z-index: 3;
+}
+.pfmc{
+    
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 5rem;
+    /* max-height: 25vh; */
+    min-width: 10rem;
+    
+    
+    padding-bottom: 0.8rem;
+    
+}
+.pfmc strong{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CBCBCB;
+    text-align: center; 
+    
+    height: 2rem;
+    
+    
+    /* padding: 0.5rem 0; */
+    
+}
+.pfm{
+    
+    color: #000000;
+    
+}
+.pfmli{
+    
+    /* background: red; */
+    background: transparent;
+    text-decoration: none;
+    list-style: none;
+    
+    min-height: 1.1rem;
+    width: 100%;
+    
+    
+}
+
+
+
+/*                           Icons                                    */
+#pro-footer-top {
+
+    /* border-top: 0.8px  #FFFFFF; */
+    border-bottom: 0.8px solid #FFFFFF;
+    background: #9900EF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    /* border: 1px solid rgba(255, 255, 255, 1); */
+    display: grid;
+    grid-template-columns: repeat(150, 1fr);
+    grid-gap: 1.8rem;
+    place-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    height: 3rem;
+    width: 100%;
+
+    padding: 0.5rem 0.5rem;
+
+    /* position: relative; */
+    /* bottom: 0.5rem; */
+    /* position: relative; */
+    /* bottom: 1rem; */
+
+    /* margin-bottom: 1rem; */
+
+    z-index: 7;
+
+}
+.pftic {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.2rem;
+
+}
+/* 170px ok */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                              Copyright                             */
+#copyright{
+    
+    /* background: #f3f4f5; */
+    background: #9900EF !important;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 10rem;
+    width: 100%;
+    
+    
+    /* margin-top: 1rem; */
+    padding-top: 3rem;
+    
+    
+    
+    
+    /* position: relative; */
+    /* bottom: 1rem; */
+    
+}
+
+
+#copyright #line{
+    
+    /* background: #000000; */
+    background: #9900EF;
+    
+    
+    height: 1px;
+    width: 80%;
+    
+    margin-inline: auto;
+    margin-bottom: 0.5rem;
+    
+    
+}
+#copyright strong{
+    
+    background: #9900EF;
+    text-align: center;
+    color: #000000;    
+    
+    margin-bottom: 0.5rem;
+}
+#copyright h1{
+    
+    background: #9900EF;
+    text-align: center;
+    color: #D4D4D4;
+    
+    margin-bottom: 0.5rem;
+    
+}
+
+
+
+
+/*                                   Svg                                     */
+/* #oo{
+    
+From https://css.glass
+background: rgba(255, 255, 255, 0.67);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.7px);
+-webkit-backdrop-filter: blur(4.7px);
+border: 1px solid rgba(255, 255, 255, 1);
+
+
+
+    height: 10rem;
+    width: 60%;
+    
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+
+
+} */
+
+.tm{
+    
+        
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 1);
+
+    height: 2rem;
+    width: 2rem;
+    
+    /* position: relative; */
+    /* left: 15rem; */
+    /* top: 1rem; */
+    
+    padding: 1rem;
+    
+}
+
+
+/* .dn{
+    
+    
+    display: none;
+} */
+
+
+svg{
+    
+    fill: none !important;
+    stroke: yellowgreen !important;
+    stroke-width: 9 !important;
+    background: transparent;
+    /* height: 20vh; */
+    /* padding-top: 50rem; */
+    margin: 0;
+    
+    
+    /* position: relative; */
+    /* top: 1rem; */
+    
+    
+    z-index: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hero{
+    
+    /* background: red; */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#menu-icon{
+    
+    background: red;
+    
+}
+
+
+
+#menu-icon:hover{
+    
+    background: green;
+}
+
+
+
+
+
+
+#menu_offcanvas_mb{
+    
+    /* display: none; */
+    
+    height: 100vh;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    
+}
+
+
+
+

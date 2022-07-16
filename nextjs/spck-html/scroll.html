@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hh</title>
+    <style>
+        body{
+            min-height: 300vh;
+            width: 100%;
+        }
+        button{
+            
+            position: fixed;
+        }
+        
+        #header {
+  background-color: #f1f1f1; /* Grey background */
+  padding: 50px 10px; /* Some padding */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+        
+    </style>
+</head>
+<body>
+    
+    <!-- put the 100th vertical pixel at the top of the window -->
+<div id="header">Header</div>
+
+
+<button onclick="scroll(0, 100);">click to scroll to the 100th pixel</button>
+    <script>
+    
+    
+    
+    
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    </script>
+
+</body>
+</html>

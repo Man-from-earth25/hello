@@ -1,0 +1,20 @@
+@mixin displays-pc{
+    .sidebar-sm,#circle,#banners{
+        display: none;
+    }
+    #navbar2{
+        display: block;
+    }
+    #navnar1{
+        display: none;
+    }
+    .pro_navbar_main_container{
+        display: none;
+    }
+
+}
+
+
+
+
+

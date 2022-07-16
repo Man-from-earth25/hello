@@ -1,0 +1,388 @@
+/* Navbar5 */
+@mixin navbar1 {
+    #nav2{
+        display: none;
+    }
+    @media (min-width: 360px) and (max-width: 490px) {
+        ::-webkit-scrollbar,#circle,#nav2 {
+                display: none;
+        }
+        
+        /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Active 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+        .pro_navbar_main_container.active {
+            height: 100vh;
+                .scroll,
+                #marker,
+                #line {
+                    display: none;
+                }
+                #circle {
+                            display: block;
+                            border-bottom: 2px solid black;
+                            width: 100%;
+                            height: 9.5vh;
+                            border-radius: 0;
+                            margin-top: 0;
+                            display: grid;
+                            padding-right: 1.3rem;
+                            place-items: center;
+                            grid-template-columns: repeat(5, 1fr);
+                
+                            li {
+                                margin-inline: auto;
+                                position: relative;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50%;
+                                margin-bottom: 2rem;
+                            }
+                }
+        }
+        .pro_navbar_mb_sm {
+                    .pro_navbar_mb_main-content {
+                        height: 91vh;
+            
+                        .form-control {
+                            display: block;
+                            position: relative;
+                            left: 5%;
+                            width: 90%;
+                        }
+            
+                        .pro_navbar_page-menu_mb {
+                            display: block;
+                            border-bottom: 2px solid black;
+                            width: 100%;
+                            height: 9.5vh;
+                            border-radius: 0;
+                            margin-top: 0;
+                            display: grid;
+                            padding-right: 1.4rem;
+                            place-items: center;
+                            grid-template-columns: repeat(5, 1fr);
+            
+                            li {
+                                margin-inline: auto;
+                                position: relative;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50%;
+                                margin-bottom: 2rem;
+                                
+                            }
+                        }
+                        .pro_navbar_sub-menu_mb {
+                            display: grid;
+                        }
+                    }
+                }
+        .pro_navbar_mb_main-content.toggle {
+            .pro_navbar_mb_main-content.toggle:first-child {
+                display: none;
+            }
+            .pro_navbar_mb_main-content.toggle:nth-child(3){
+                display: block;
+            }
+            
+        }
+        
+        .pro_navbar_main_container.active:nth-child(2) {
+            background: #6BFFF5;
+        }
+        .pro_navbar_main_container.active:nth-child(3) {
+            background: #6BFFF5;
+            display: block;
+        }
+        
+        .pro_navbar_main_container.toggle {
+            height: 15vh;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        
+    }
+    /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Normal 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+    #nav2,
+    .pro_navbar_page-menu_mb {
+        display: none;
+    }
+    .pro_navbar_main_container {
+        height: 15vh;
+        background: #FFFFFF;
+        width: 100%;
+    
+        .pro_navbar_mb_sm {
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+    
+            .pro_navbar_mb_header {
+    
+                /* border: 3px solid #9F00FF; */
+                display: grid;
+                grid-template-columns: 85% 1fr;
+    
+                .pro_navbar_brand_mb {
+                    /* padding-top: 10%; */
+                    position: relative;
+                    top: 0.7rem;
+                    font-size: 1.9rem;
+                    margin: 0;
+                    padding: 0;
+                    font-style: bold;
+                    font-weight: 700;
+                    padding-left: 1rem;
+                }
+    
+                .pro_navbar_mb_btn {
+                    margin-top: 0.4rem;
+                    background: #fff;
+                    border-radius: 0.5rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    display: grid;
+                    place-items: center;
+    
+                    #icon_menu {
+                        font-size: 2rem;
+                        display: block;
+                        position: relative;
+                        bottom: 0.2rem;
+    
+                    }
+    
+                    #icon_close {
+                        font-size: 2.3rem;
+                        display: none;
+                        margin-right: 2rem;
+                        position: relative;
+                        bottom: 0.2rem;
+    
+                    }
+                }
+    
+                .pro_navbar_mb_btn.active {
+                    #icon_menu {
+                        display: none;
+                    }
+    
+                    #icon_close {
+                        display: block;
+                    }
+                }
+            }
+    
+            .pro_navbar_mb_main-content {
+                height: 8vh;
+    
+                .form-control {
+                    display: none;
+                }
+    
+                .pro_navbar_page-menu_mb {
+                    overflow: hidden;
+                    margin-bottom: 0;
+                    height: 10vh;
+                    margin-inline: auto;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 0.6rem;
+                    padding-left: 1.1rem;
+                    padding-bottom: 0.8rem;
+
+                    li {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        height: 3.4vh;
+                        place-items: center;
+    
+                        .pro_toggle_navbar_mb {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 1.3rem;
+                            border-radius: 50%;
+                            background: rgba(240, 240, 255, 0.5);
+                        }
+    
+                        .mb_items {
+                            color: black;
+                            display: none;
+                        }
+    
+                        .mb_icons {
+                            font-size: 1.0rem;
+                        }
+                    }
+                }
+    
+                .pro_navbar_page-menu_mb.toggle {
+                    background: red;
+                    display: none;
+                }
+    
+            }
+        }
+        
+        
+        
+        
+        /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+        
+        .scroll {
+            padding: 4px;
+            
+            
+            height: 60px;
+            width: 100%;
+            
+            
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            display: grid;
+            
+            
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: 40px 5px;
+            
+        }
+        
+        
+        
+        .scroll_li {
+            
+            list-style: none;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            grid-row: 1 / 2;
+            
+            
+            height: 4vh;
+            
+            
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+        }
+        
+        
+        
+        .scroll_li_a {
+            
+            text-align: center;
+            text-decoration: none;
+            
+            
+            font-size: 1rem;
+            font-style: bold;
+            font-weight: 700vh;
+            
+            
+            color: #6c757d !important;
+            
+            
+            position: relative;
+            top: 0.5rem;
+            
+            
+        }
+        
+        
+        .scroll_li_a:focus {
+            color: #000000 !important;
+            font-style: bold;
+            font-weight: 700;
+            /* animation-name: sidebar; */
+            /* animation-duration: 4s; */
+          
+        }
+        
+        
+        #marker {
+            background: #000;
+            height: 3px;
+            min-width: 10%;
+            
+            position: relative;
+            top: 0.1rem;
+            
+            grid-row: 2 / 3;
+            
+            z-index: 2;
+        }
+        
+        
+        
+        
+        #line {
+            
+            height: 1.5px;
+            width: 100%;
+            
+            position: relative;
+            bottom: 0.7rem;
+            border-radius: 0px;
+            background: #e0e0e0;
+            box-shadow:  18px 18px 36px #727272,
+                         -18px -18px 36px #ffffff;        
+            
+            z-index: 1;
+        }
+        
+        
+        .sidebar-sm{
+            height: 50px;
+        }
+        
+        
+            /* The animation code */
+        @keyframes sidebar {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:200px; top:0px;}
+          50%  {background-color:blue; left:200px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+        
+        /* The element to apply the animation to */
+        .animation {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          background-color: red;
+          animation-name: sidebar;
+          animation-duration: 4s;
+        }    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #navbar2{
+            display: none;
+        }
+        
+        
+        
+       .pro_navbar_pc_lg {
+            display: none;
+        }
+        
+    }
+  
+}

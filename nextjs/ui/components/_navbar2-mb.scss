@@ -1,0 +1,478 @@
+    @mixin navbar2-mb {
+        #mb_navbar_top {
+            
+            display: grid;
+            grid-template-rows: 7.5vh;
+            /* box-shadow:  18px 18px 63px #666666,
+                         -18px -18px 63px #ffffff; */ 
+             
+            /* height: 11.32vh; */
+            
+            position: relative;
+            
+            z-index: 1;
+            
+             transition-delay: 0.5s;
+        background: #e0e0e0;
+        box-shadow:  18px 18px 36px #5a5a5a,
+                     -18px -18px 36px #ffffff;
+            
+            
+            
+        }
+        #mb_navbartop_header > ion-icon{
+            /* color: #15FF56; */
+        }
+        #mb_navbartop_header > ion-icon:hover{
+            color: #FF155F;
+        }
+        #mb_navbartop_header {
+            
+            display: grid;
+            place-items: center;
+            grid-template-columns: 50px 1fr 1fr 1fr 125px 1fr 1fr 1fr 50px;
+            
+            color: #000000;
+        
+            height: 6vh;
+            width: 100%;
+            
+            
+        }
+        #mb_navbartop_header.active{
+            
+            
+            /* background: red; */
+            
+            
+            grid-template-columns: 50px 67.5px 1fr 100px 1fr 1fr 1fr 50px;
+            
+            
+            
+        }
+            
+        #nine_dots{
+            
+            
+            border-radius: 8px;
+            /* background: linear-gradient(145deg, #f0f0f0, #cacaca); */
+            /* box-shadow:  20px 20px 60px #5a5a5a,
+                        -20px -20px 60px #ffffff; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            /* Not needed */
+            height: 30px;
+            width: 30px;
+            
+            
+            position: relative;
+            /* top: 1rem; */
+            /* left: 2rem; */
+            
+            
+            /* margin-inline: auto; */
+            
+            
+            cursor: pointer;
+            
+            z-index: 2;
+            
+            
+            
+        }
+        #nine_dots span{
+            
+            
+            /* background: #35FF25; */
+            background: #000000;
+            /* border: 2px solid #6C6C6C; */
+            
+            height: 3px;
+            width: 2.5px;
+            
+            /* position: relative; */
+            position: absolute;
+            
+            
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            
+            
+            transform: translate(calc(7px * var(--x)),calc(7px * var(--y)));
+            /* transform: translate(calc(12px * var(--x)),calc(12px * var(--y))) */
+            /* transition: transform 0.5s,width 0.5s,height 0.5s; */
+            transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s;
+            
+            transition-delay: calc(0.1s * var(--i));
+            
+        }
+        #nine_dots span ion-icon{
+            
+            
+            display: none;
+            
+            
+        }
+        #cancel_web{
+            
+            display: none;
+            
+            background: #DFDFDF;
+            border-radius: 50%;
+            
+            font-size: 2.5rem;
+            
+            position: relative;
+            left: 70%;
+            
+            padding: 0.5rem;
+            
+        }
+        #nine_dots.active{
+            
+            
+            background: #E1E1E1;
+            
+            border-radius: 15px;
+            
+            /* position: relative; */
+            position: fixed;
+            top: 0.7rem;
+
+            right: 9rem;
+            
+            height: 200px;
+            width: 200px;
+            
+            
+            
+        }
+        #nine_dots.active span{
+            
+            
+            background: #ECECEC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            height: 45px;
+            width: 45px;
+            
+            transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+            transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s;
+            
+            
+            
+        }
+        #nine_dots.active span ion-icon{
+            
+            display: block;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* background: #425A48; */
+            
+            
+        }
+        #nine_dots.active #cancel_web{
+            
+            display: block;
+        }
+
+        #mb_navbartop_brand {
+            color: #000000;
+            font-style: italic;
+
+            text-align: center;
+
+            margin-top: 0.3rem;
+
+        }
+
+        #dropdown-icon-mb {
+            font-size: 2rem;
+
+            position: relative;
+            /* bottom: 0.3rem; */
+        }
+
+        #menu-icon-mb {
+            font-size: 1.8rem;
+
+            /* position: relative; */
+            bottom: 0.3rem;
+
+            margin-bottom: 0.3rem;
+        }
+
+        #profile-icon-mb {
+            font-size: 1.7rem;
+        }
+
+        #mb_navbartop_scroll {
+            
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            
+            
+            /* background: red; */
+            border-bottom: 1.2px solid #999999;
+            
+            /* position: fixed; */
+            /* top: 0; */
+            
+            
+            height: 6.5vh;
+            width: 100%;
+            
+            margin: 0;
+            padding: 0;
+            
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            
+            text-decoration: none;
+            
+            
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            
+            
+            position: relative;
+            bottom: 0.6rem;
+            
+            z-index: 1;
+            
+        }
+        
+        
+        
+        #mb_navbartop_scroll li{
+            
+            /* position: fixed; */
+            /* top: 0; */
+            
+            /* background: #1CFF00; */
+            
+            
+            /* height: 7.5vh; */
+            
+            display: grid;
+            grid-template-rows: 7.2vh;
+            /* grid-template-columns: 7.2vh; */
+            
+            align-items: center;
+            justify-content: center;
+            
+            text-decoration: none;
+            list-style: none;
+            
+            
+            margin-right: 1rem;
+            
+            position: relative;
+            bottom: 0.2rem;
+            
+            z-index: 2;
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* Sprincle Android mb effect */
+        
+        #mb_navbartop_scroll li:hover{
+            
+            color: #000000;
+            
+            /* background: red; */
+            
+            /* border-bottom: 3.4px solid #000000; */
+            
+            
+            
+        } 
+        .mb_navbartopscroll_pages{
+            
+            /* color: #000000; */
+            color: #6c757d !important;
+            
+            text-decoration: none;
+            list-style: none;
+            
+            position: relative;
+            top: 0.2rem;
+            
+            font-size: 1.3rem;
+            
+        }
+        .mb_navbartopscroll_pages:hover{
+            
+            color: #000000 !important;
+            background: #4EFFAC;
+            
+            
+        }
+        #mb_navbartop_scroll li:last-child{
+            
+            /* background: #4F00FF; */
+            
+            margin-right: 0;
+        }
+        
+        
+        .mb-navbartop-icons:hover{
+            
+            color: #70FFE5;
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        #mb_navbar_bottom{
+            display: none;
+            /* background: green; */
+            /* border-bottom: 1px solid #2035F3; */
+            /* display: grid; */
+            /* grigrid-template-rows: 14vh; */
+            
+            
+            
+            
+            position: fixed;
+            bottom: 0;
+            
+            
+            /* min-height: 5vh; */
+            width: 100%;
+            
+            margin: 0;
+            padding: 0;
+            
+            
+            
+        }
+        #mb_navbar_bottom ul{
+            
+            /* background: #F32020; */
+            /* display: grid; */
+            /* grid-template-rows: 7vh; */
+            
+            /* min-height: 5vh; */
+            width: 100%;
+            
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            
+            margin: 0;
+            padding: 0;
+            
+            
+            
+        }      
+        #mb_navbar_bottom ul li{
+            
+            background: #12FF25;
+            color: #12FF25;
+            display: grid;
+            grid-template-rows: 7vh;
+            
+            background: #FFFFFF;
+            border-top: 1px solid #000000;
+            
+            
+            height: 7vh;
+            width: 100%;
+            
+            
+            text-decoration: none;
+            list-style: none;
+            
+            padding: 0;
+            margin: 0;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        #mb_navbar_bottom ul li:hover{
+            
+            color: #FF0000;
+            
+        }
+        
+        
+        .mb_navbarbottom_icons{
+            
+            
+            font-size: 1.5rem;
+            
+        }
+        #mb_navbartop_scroll-container{
+            
+            
+            
+        }
+        .mb_navbartopscroll_pages{
+            
+            
+            background: #E7E7E7;
+            
+            
+            padding: 0.2rem 0.8rem;
+            border: 0.7px solid black;
+            border-radius: 20px;
+            font-size: 1rem;
+            
+            
+        }
+    }
