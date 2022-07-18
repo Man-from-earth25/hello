@@ -196,3 +196,10 @@ GRAPHENE = {
 
 
 
+if DEBUG = True:
+   print("On Production")
+if DEBUG = False:
+   print("On Development")
+   
+   
+   
