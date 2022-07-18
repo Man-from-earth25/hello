@@ -21,9 +21,9 @@ class DjangoTest(models.Model):
     decimal = models.DecimalField(null=True,blank=True)
     duration = models.DurationField(null=True,blank=True)
     email = models.EmailField(null=True,blank=True)
-    file = models.FileField(null=True,blank=True)
+    file = models.FileField(upload_to ='files/% Y/% m/% d/',null=True,blank=True)
     float = models.FloatField(null=True,blank=True)
-    image = models.ImageField(null=True,blank=True)
+    image = models.ImageField(upload_to ='images/% Y/% m/% d/',null=True,blank=True)
     integer = models.IntegerField(null=True,blank=True)
     genericIPAddress = models.GenericIPAddressField(null=True,blank=True)
     nullBoolean = models.NullBooleanField(null=True,blank=True)
@@ -35,3 +35,8 @@ class DjangoTest(models.Model):
     time = models.TimeField(null=True,blank=True)
     uRL = models.URLField(null=True,blank=True)
     uUID = models.UUIDField(null=True,blank=True)
+
+
+
+
+
