@@ -4,9 +4,6 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 from .views import MyTokenObtainPairView
-
-
-
 from . import views
 
 
@@ -14,6 +11,7 @@ from . import views
 
 
 urlpatterns = [
+    
     path('index/', views.index, name='index'),
     path('add/', views.add, name='add'),
     
@@ -30,6 +28,5 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     
-
     
 ]
