@@ -10,7 +10,6 @@ from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView,
     
 p1 = "Thapa"
 print(p1)
-print(Video.objects.all())
     
     
 class VideoList(ListAPIView):
