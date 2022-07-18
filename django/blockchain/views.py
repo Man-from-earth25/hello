@@ -50,7 +50,6 @@ class BlockchainsRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
 class DjangoTestList(ListAPIView):
     queryset = DjangoTest.objects.all()
     serializer_class = DjangoTestSerializer
-    filterset_fields = ['name','id']
 # Postdata    
 class DjangoTestCreate(CreateAPIView):
     queryset = DjangoTest.objects.all()

@@ -1,27 +1,20 @@
 from pathlib import Path
 import os
 import django_heroku
+from datetime import timedelta
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-w+gxnjtl$=)@4dil^37z^&y+b4)%f$4q1^s7)2vworweqkh+-+'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['*']
-
-
+CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
-
 INSTALLED_APPS = [
-    # "channels",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +35,7 @@ INSTALLED_APPS = [
    
 
 ]
-
+# MIDDLEWARES
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -54,9 +47,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
 ROOT_URLCONF = 'agenda_django_server.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -72,12 +63,7 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'agenda_django_server.wsgi.application'
-
-
-
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
@@ -91,13 +77,6 @@ DATABASES = {
         
     }
 }
-
-import dj_database_url
-# db_from_env = dj_database_url.config(conn_max_age=600)
-# DATABASES['default'].update(db_from_env)
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -112,36 +91,16 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-
 # Internationalization
-# https://docs.djangoproject.com/en/3.2/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-django_heroku.settings(locals())
-STATIC_URL = '/static/'
 MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR,'media/')
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-from datetime import timedelta
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CORS_ALLOW_ALL_ORIGINS = True
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -149,8 +108,6 @@ REST_FRAMEWORK = {
     # 'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',)
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
-
-
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=10),
@@ -181,14 +138,7 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
-
-
-
-
-
 X_FRAME_OPTIONS = 'ALLOW-FROM http://localhost:5000 || https://pro-component-express1o1.herokuapp.com'
-
-
 GRAPHENE = {
     "SCHEMA": "agenda_django_server.schema.schema"
 }
@@ -196,10 +146,13 @@ GRAPHENE = {
 
 
 
-if DEBUG = True:
+
+
+# Debug
+if DEBUG == True:
    print("On Production")
-if DEBUG = False:
+if DEBUG == False:
    print("On Development")
-   
-   
-   
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+django_heroku.settings(locals())
+STATIC_URL = '/static/'   
