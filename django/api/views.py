@@ -18,46 +18,36 @@ class StudentCreate(CreateAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
     
-    
-    
 # RetrieveAPIView    
 class StudentRetrieve(RetrieveAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
-    
-    
     
 # UpdateAPIView    
 class StudentUpdate(UpdateAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
 
-
 # DestroyAPIView    
 class StudentDelete(DestroyAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
-
 
 # GetAndPost
 class StudentListCreate(ListCreateAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
 
-
 # RetrieveUpdateAPIView    
 class StudentRetrieveUpdate(RetrieveUpdateAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
-
-
+    
 # RetrieveDestroyAPIView
 class StudentRetrieveDestroy(RetrieveDestroyAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
-
-
-
+    
 # RetrieveUpdateDestroyAPIView
 class StudentRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
     queryset = Students.objects.all()
@@ -72,27 +62,26 @@ class StudentRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
     
     
     
-# Create your views here.
+# Index and Add.
 def index(request):
     return HttpResponse("Hello world!")
 def add(request):
-    """docstring for fname"""
-    # TODO: write code...
     return render(request,"index.html")     
     
     
 
+
+
+
+
+# Django Jwt Token.
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
         token = super().get_token(user)
-
         # Add custom claims
         token['username'] = user.username
-        # ...
-
         return token
-
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer    
     

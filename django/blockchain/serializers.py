@@ -1,10 +1,14 @@
-from django.contrib import admin
+from rest_framework import serializers
 from .models import Blockchains
 
-# Admin test.
-@admin.register(Blockchains)
-class BlockchainsAdmin(admin.ModelAdmin): 
-    list_display = ['id', 'name', 'email', 'Comment', 'bff', 'stars', 'age']
+
+class BlockchainSerializer(serializers.ModelSerializer): 
+    class Meta: 
+        model = Blockchains
+        fields = ['id', 'name', 'email', 'Comment', 'bff', 'stars', 'age']
+
+
+
 
 
 
