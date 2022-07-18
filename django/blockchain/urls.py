@@ -30,5 +30,25 @@ urlpatterns = [
     path('dt/rd/<int:pk>/', views.DjangoTestRetrieveDestroy.as_view()),
     path('dt/rud/<int:pk>/', views.DjangoTestRetrieveUpdateDestroy.as_view()),
     
+    path('bi/', views.DjangoTestList.as_view()),
+    path('bi/c', views.DjangoTestCreate.as_view()),
+    path('bi/gp', views.DjangoTestListCreate.as_view()),
+    path('bi/r/<int:pk>/', views.DjangoTestRetrieve.as_view()),
+    path('bi/u/<int:pk>/', views.DjangoTestUpdate.as_view()),
+    path('bi/d/<int:pk>/', views.DjangoTestDelete.as_view()),
+    path('bi/ru/<int:pk>/', views.DjangoTestRetrieveUpdate.as_view()),
+    path('bi/rd/<int:pk>/', views.DjangoTestRetrieveDestroy.as_view()),
+    path('bi/rud/<int:pk>/', views.DjangoTestRetrieveUpdateDestroy.as_view()),
+
+    path('b/', views.DjangoTestList.as_view()),
+    path('b/c', views.DjangoTestCreate.as_view()),
+    path('b/gp', views.DjangoTestListCreate.as_view()),
+    path('b/r/<int:pk>/', views.DjangoTestRetrieve.as_view()),
+    path('b/u/<int:pk>/', views.DjangoTestUpdate.as_view()),
+    path('b/d/<int:pk>/', views.DjangoTestDelete.as_view()),
+    path('b/ru/<int:pk>/', views.DjangoTestRetrieveUpdate.as_view()),
+    path('b/rd/<int:pk>/', views.DjangoTestRetrieveDestroy.as_view()),
+    path('b/rud/<int:pk>/', views.DjangoTestRetrieveUpdateDestroy.as_view()),
+    
     
 ]
