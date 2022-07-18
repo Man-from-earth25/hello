@@ -10,7 +10,6 @@ class Blockchains(models.Model):
     bff = models.CharField(max_length=100)
 # Django Test.
 class DjangoTest(models.Model): 
-    auto = models.AutoField(null=True,blank=True)
     bigAuto = models.BigAutoField(null=True,blank=True)
     bigInteger = models.BigIntegerField(null=True,blank=True)
     binary = models.BinaryField(null=True,blank=True)
