@@ -7,18 +7,28 @@ from . import views
 
 urlpatterns = [
     
-    path('index/', views.index, name='index'),
+    path('', views.index, name='index'),
     path('add/', views.add, name='add'),
     
-    path('', views.BlockchainList.as_view()),
-    path('c', views.BlockchainCreate.as_view()),
-    path('gp', views.BlockchainListCreate.as_view()),
-    path('r/<int:pk>/', views.BlockchainRetrieve.as_view()),
-    path('u/<int:pk>/', views.BlockchainUpdate.as_view()),
-    path('d/<int:pk>/', views.BlockchainDelete.as_view()),
-    path('ru/<int:pk>/', views.BlockchainRetrieveUpdate.as_view()),
-    path('rd/<int:pk>/', views.BlockchainRetrieveDestroy.as_view()),
-    path('rud/<int:pk>/', views.BlockchainRetrieveUpdateDestroy.as_view()),
+    path('bt/', views.BlockchainList.as_view()),
+    path('bt/c', views.BlockchainCreate.as_view()),
+    path('bt/gp', views.BlockchainListCreate.as_view()),
+    path('bt/r/<int:pk>/', views.BlockchainRetrieve.as_view()),
+    path('bt/u/<int:pk>/', views.BlockchainUpdate.as_view()),
+    path('bt/d/<int:pk>/', views.BlockchainDelete.as_view()),
+    path('bt/ru/<int:pk>/', views.BlockchainRetrieveUpdate.as_view()),
+    path('bt/rd/<int:pk>/', views.BlockchainRetrieveDestroy.as_view()),
+    path('bt/rud/<int:pk>/', views.BlockchainRetrieveUpdateDestroy.as_view()),
+
+    path('dt/', views.DjangoTestList.as_view()),
+    path('dt/c', views.DjangoTestCreate.as_view()),
+    path('dt/gp', views.DjangoTestListCreate.as_view()),
+    path('dt/r/<int:pk>/', views.DjangoTestRetrieve.as_view()),
+    path('dt/u/<int:pk>/', views.DjangoTestUpdate.as_view()),
+    path('dt/d/<int:pk>/', views.DjangoTestDelete.as_view()),
+    path('dt/ru/<int:pk>/', views.DjangoTestRetrieveUpdate.as_view()),
+    path('dt/rd/<int:pk>/', views.DjangoTestRetrieveDestroy.as_view()),
+    path('dt/rud/<int:pk>/', views.DjangoTestRetrieveUpdateDestroy.as_view()),
     
     
 ]

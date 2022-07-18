@@ -55,3 +55,12 @@
 //     console.log(elements.length);
 // });
 // console.log(bn);
+
+
+
+
+let bn = document.querySelectorAll('.MuiPaper-root:nth-child(1)');
+bn.forEach((elements) => {
+    console.log(elements.length);
+});
+
