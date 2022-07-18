@@ -1,4 +1,4 @@
-infrom django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView, ListCreateAPIView, RetrieveUpdateAPIView, RetrieveDestroyAPIView, RetrieveUpdateDestroyAPIView 
 from .serializers import BlockchainSerializer
@@ -12,7 +12,7 @@ from .models import DjangoTest
 class BlockchainsList(ListAPIView):
     queryset = Blockchains.objects.all()
     serializer_class = BlockchainSerializer
-    filterset_fields = ['name','id']
+  
 # Postdata    
 class BlockchainsCreate(CreateAPIView):
     queryset = Blockchains.objects.all()

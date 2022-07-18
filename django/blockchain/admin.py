@@ -10,7 +10,28 @@ class BlockchainsAdmin(admin.ModelAdmin):
 # Django test.
 @admin.register(DjangoTest)
 class DjangoTestAdmin(admin.ModelAdmin): 
-    list_display = "__all__"
+    list_display = [
+    "binary",
+    "boolean",
+    "char",
+    "date",
+    "dateTime",
+    "decimal",
+    "duration",
+    "email",
+    "file",
+    "float",
+    "integer",
+    "genericIPAddress",
+    "positiveInteger",
+    "positiveSmallInteger",
+    "slug",
+    "smallInteger",
+    "text",
+    "time",
+    "uRL",
+    "uUID"
+  ]
 
 
 
