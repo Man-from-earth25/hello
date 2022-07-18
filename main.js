@@ -8,9 +8,6 @@ window.onload = function() {
         console.log(files[0].size);
         console.log(files[0].type);
         console.log(files[0].lastModifiedDate);
-        // let blob = files.slice(0, files[0].size, 'audio/mpeg');
-        // let newFile = new File([blob],'name.mp3',{type:'audio/mpeg'});
-        // console.log(newFile.name);
         audio.src = URL.createObjectURL(files[0]);
         audio.load();
         audio.play();
