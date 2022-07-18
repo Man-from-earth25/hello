@@ -23,7 +23,6 @@ class DjangoTest(models.Model):
     email = models.EmailField(null=True,blank=True)
     file = models.FileField(upload_to ='files/% Y/% m/% d/',null=True,blank=True)
     float = models.FloatField(null=True,blank=True)
-    image = models.ImageField(upload_to ='images/% Y/% m/% d/',null=True,blank=True)
     integer = models.IntegerField(null=True,blank=True)
     genericIPAddress = models.GenericIPAddressField(null=True,blank=True)
     nullBoolean = models.NullBooleanField(null=True,blank=True)
