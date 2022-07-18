@@ -8,9 +8,6 @@ from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView,
 
     
     
-p1 = "Thapa"
-print(p1)
-    
     
 class VideoList(ListAPIView):
     queryset = Video.objects.all()
