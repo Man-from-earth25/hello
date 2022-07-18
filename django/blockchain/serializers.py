@@ -6,7 +6,7 @@ from .models import DjangoTest
 
 
 # Blockchains Test
-class BlockchainSerializer(serializers.ModelSerializer): 
+class BlockchainsSerializer(serializers.ModelSerializer): 
     class Meta: 
         model = Blockchains
         fields = ['id', 'name', 'email', 'Comment', 'bff', 'stars', 'age']

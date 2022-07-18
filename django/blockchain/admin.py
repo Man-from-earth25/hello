@@ -4,10 +4,16 @@ from .models import Blockchains
 from .models import DjangoTest
 from .models import Blockchain_info
 
+
+
+
+
 # Blockchains test
+@admin.register(Blockchains)
 class BlockchainsAdmin(admin.ModelAdmin): 
     list_display = ['id', 'name', 'email', 'Comment', 'bff', 'stars', 'age']
 # Django test
+@admin.register(DjangoTest)
 class DjangoTestAdmin(admin.ModelAdmin): 
     list_display = [
     "binary",
@@ -35,9 +41,10 @@ class DjangoTestAdmin(admin.ModelAdmin):
     
     
 # Blockchains Info
+@admin.register(Blockchain_info)
 class Blockchain_infoAdmin(admin.ModelAdmin): 
-    list_display = [
-        
+   list_display = [
+    
         "bigInteger",
         "binary",
         "boolean",
@@ -63,9 +70,10 @@ class Blockchain_infoAdmin(admin.ModelAdmin):
         
     ]
 
-# Blockchains test
+# Blockchain
+@admin.register(Blockchain)
 class BlockchainAdmin(admin.ModelAdmin): 
-    list_display = [
+  list_display = [
         
         "like",
         "dislike",
@@ -91,13 +99,13 @@ class BlockchainAdmin(admin.ModelAdmin):
         "snapchat",
         "discord",
         "tiktok",
-        "thanksTo"
+        "thanksTo",
         "otherProduct",
         "supportedPlatform",
-        "status",
+        "alert",
         "info",
-        "secured",
         "issue",
+        "experience",
         "helpSupport",
         
         
@@ -105,10 +113,6 @@ class BlockchainAdmin(admin.ModelAdmin):
 
 
 
-@admin.register(Blockchain)
-@admin.register(Blockchains)
-@admin.register(Blockchain_info)
-@admin.register(DjangoTest)
 
 
 

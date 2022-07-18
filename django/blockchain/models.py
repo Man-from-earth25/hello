@@ -4,7 +4,26 @@ from datetime import datetime
 name = "Python"
 op1 = "Emon"
 op2 = "emon"
+first = "1"
+second = "2"
+third = "3"
+fourth = "4"
+fifth = "5"
 
+ALERT_CHOICES = (
+  (first,"Verified"),
+  (second,"Can Be Trusted"),
+  (third,"Security Is Low"),
+  (fourth,"Seems Suspicious"),
+  (fifth,"Has Potential Risks")
+)
+EXPERIENCE_CHOICES = (
+  (first,"Very Well"),
+  (second,"Good"),
+  (third,"Can Be Better"),
+  (fourth,"Bad"),
+  (fifth,"Awful")
+)
 
 # Blockchains only for Test
 class Blockchains(models.Model): 
@@ -90,9 +109,9 @@ class Blockchain(models.Model):
     tiktok = models.URLField(null=True,blank=True)
     thanksTo = models.CharField(null=True,blank=True,max_length = 230)
     otherProduct = models.TextField(null=True,blank=True)
-    supportedPlatform = models.URLField(null=True,blank=True)
+    supportedPlatform = models.CharField(max_length=500,null=True,blank=True)
     issue = models.TextField(null=True,blank=True)
     helpSupport = models.URLField(null=True,blank=True)
-    secured = models.BooleanField(null=True,blank=True)
-    status = models.TextField(null=True,blank=True)
+    alert = models.CharField(choices=ALERT_CHOICES,max_length= 500,null=True,blank=True)
+    experience = models.CharField(choices=EXPERIENCE_CHOICES,max_length= 250,null=True,blank=True)
     info = models.TextField(null=True,blank=True)

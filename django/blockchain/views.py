@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveAPIView, UpdateAPIView, DestroyAPIView, ListCreateAPIView, RetrieveUpdateAPIView, RetrieveDestroyAPIView, RetrieveUpdateDestroyAPIView 
 from .serializers import BlockchainSerializer
+from .serializers import BlockchainsSerializer
+from .serializers import Blockchain_infoSerializer
 from .serializers import DjangoTestSerializer
 from .models import Blockchain
 from .models import Blockchains
