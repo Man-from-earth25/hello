@@ -4,11 +4,17 @@ from datetime import datetime
 name = "Python"
 op1 = "Emon"
 op2 = "emon"
+
 first = "1"
 second = "2"
 third = "3"
 fourth = "4"
 fifth = "5"
+six = "6"
+seven = "7"
+eighth= "8"
+nine = "9"
+ten = "10"
 
 ALERT_CHOICES = (
   (first,"Verified"),
@@ -23,6 +29,20 @@ EXPERIENCE_CHOICES = (
   (third,"Can Be Better"),
   (fourth,"Bad"),
   (fifth,"Awful")
+)
+REPORT = (
+  (first,"Toxic Behavior "),
+  (second,"Bad Service"),
+  (third,"Inpropiot Name"),
+  (fourth,"AKF"),
+  (fifth,"Cheat")
+)
+STAR = (
+  (first,"1"),
+  (second,"2"),
+  (third,"3"),
+  (fourth,"4"),
+  (fifth,"5")
 )
 
 # Blockchains only for Test
@@ -81,6 +101,10 @@ class Blockchain_info(models.Model):
     time = models.TimeField(null=True,blank=True)
     uRL = models.URLField(null=True,blank=True)
     uUID = models.UUIDField(null=True,blank=True)
+    
+    
+    
+    
 # Blockchain
 class Blockchain(models.Model): 
     like = models.BigIntegerField(null=True,blank=True)
@@ -110,8 +134,12 @@ class Blockchain(models.Model):
     thanksTo = models.CharField(null=True,blank=True,max_length = 230)
     otherProduct = models.TextField(null=True,blank=True)
     supportedPlatform = models.CharField(max_length=500,null=True,blank=True)
-    issue = models.TextField(null=True,blank=True)
+    report = models.CharField(choices=REPORT,max_length= 500,null=True,blank=True)
     helpSupport = models.URLField(null=True,blank=True)
     alert = models.CharField(choices=ALERT_CHOICES,max_length= 500,null=True,blank=True)
     experience = models.CharField(choices=EXPERIENCE_CHOICES,max_length= 250,null=True,blank=True)
     info = models.TextField(null=True,blank=True)
+    smartContract = models.URLField(null=True,blank=True)
+    smartContractGraph = models.URLField(null=True,blank=True)
+    comment = models.TextField(null=True,blank=True)
+    star =  models.CharField(choices=STAR,max_length= 500,null=True,blank=True)

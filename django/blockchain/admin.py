@@ -69,7 +69,6 @@ class Blockchain_infoAdmin(admin.ModelAdmin):
         "uUID"        
         
     ]
-
 # Blockchain
 @admin.register(Blockchain)
 class BlockchainAdmin(admin.ModelAdmin): 
@@ -103,10 +102,14 @@ class BlockchainAdmin(admin.ModelAdmin):
         "otherProduct",
         "supportedPlatform",
         "alert",
+        "report",
         "info",
-        "issue",
         "experience",
         "helpSupport",
+        "smartContract",
+        "smartContractGraph",
+        "comment",
+        "star",
         
         
     ]
