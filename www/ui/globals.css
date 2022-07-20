@@ -12,7 +12,7 @@
 /* Else */
 /* @import url(./component/FooTer/footer.css); */
 /* Tailwind Css */
-@import url(./tailwind.css);
+/* @import url(./tailwind.css); */
 /* Variables */
 @import url(./variable.css);
 /* Freefire */
@@ -24,7 +24,7 @@
 /* @import url(./page/welcome.css); */
 
 /* Thailand */
-@import url(./ui/component/thailand/thailand_ui_1o9.css);
+/* @import url(./ui/component/thailand/thailand_ui_1o9.css); */
 
 *,*::before,*::after{
     /* background: var(--X-bg); */
@@ -162,20 +162,6 @@ main{
 
 /* Desktop */
 @media(min-width:900px){
-    /* main{
-        
-        padding: 0 50px;
-        
-        width: 100%;
-        
-        
-        
-    } */
-    /* body{
-        
-        min-height: 100vh;
-        
-    } */
     .backdrop.active{
         
         
@@ -281,10 +267,7 @@ main{
 
 
 
-body,
-main,
-main > *{
-    
-    background: #202224;
-    
-}
+
+
+
+
