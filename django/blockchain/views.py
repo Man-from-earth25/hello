@@ -170,7 +170,7 @@ class BlockchainRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
     
 # Index and Add.
 def index(request):
-    return HttpResponse("Index")
+    return render(request,"index.html")     
 def add(request):
     return HttpResponse("Add")
     

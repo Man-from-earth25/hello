@@ -15,19 +15,19 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     
-    path('', include('home.urls')),
-    path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
-    path('blockchain/', include('blockchain.urls')),
-    path('todo/', include('todo.urls')),
+    path('', admin.site.urls),
+    path('blockchain', include('blockchain.urls')),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
     
-    # Jwt
-    # path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    # path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
 ]
 
 
 if settings.DEBUG: 
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+    
+if settings.DEBUG == True:
+    print("Debug True")
+if settings.DEBUG == False:
+    print("Debug False")
+    
