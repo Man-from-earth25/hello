@@ -5,36 +5,6 @@ from .models import DjangoTest
 from .models import Blockchain_info
 
 
-
-# Blockchains Info
-@admin.register(Blockchain_info)
-class Blockchain_InfoAdmin(admin.ModelAdmin): 
-   list_display = [
-    
-        "bigInteger",
-        "binary",
-        "boolean",
-        "char",
-        "date",
-        "dateTime",
-        "decimal",
-        "duration",
-        "email",
-        "file",
-        "float",
-        "integer",
-        "images",
-        "genericIPAddress",
-        "positiveInteger",
-        "positiveSmallInteger",
-        "slug",
-        "smallInteger",
-        "text",
-        "time",
-        "uRL",
-        "uUID"        
-        
-    ]
 # Blockchain
 @admin.register(Blockchain)
 class BlockchainAdmin(admin.ModelAdmin): 
