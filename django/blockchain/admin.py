@@ -25,7 +25,7 @@ class BlockchainAdmin(admin.ModelAdmin):
         "nativeCurrency",
         "infoURL",
         "slip44",
-        "standard",
+        "share",
         "ens",
         "exprolers",
         "hello",

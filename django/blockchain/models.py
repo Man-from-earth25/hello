@@ -122,7 +122,7 @@ class Blockchain(models.Model):
     nativeCurrency = models.TextField(null=True,blank=True)
     infoURL = models.URLField(null=True,blank=True)
     slip44 = models.IntegerField(null=True,blank=True)  
-    standard = models.BooleanField(null=True,blank=True)
+    share = models.TextField(null=True,blank=True)
     ens = models.TextField(null=True,blank=True)
     exprolers = models.TextField(null=True,blank=True)
     hello = models.URLField(null=True,blank=True)

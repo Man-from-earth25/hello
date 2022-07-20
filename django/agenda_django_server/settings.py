@@ -61,7 +61,6 @@ TEMPLATES = [
 ]
 WSGI_APPLICATION = 'agenda_django_server.wsgi.application'
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -73,6 +72,7 @@ DATABASES = {
         
     }
 }
+# Auth
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -93,8 +93,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-
-
+# Media
 MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR,'media/')
 REST_FRAMEWORK = {
@@ -104,6 +103,7 @@ REST_FRAMEWORK = {
     # 'DEFAULT_RENDERER_CLASSES': ('rest_framework.renderers.JSONRenderer',)
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
+# Jwt
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=10),
@@ -134,14 +134,10 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
-X_FRAME_OPTIONS = 'ALLOW-FROM http://localhost:5000 || https://pro-component-express1o1.herokuapp.com'
+X_FRAME_OPTIONS = '*'
 GRAPHENE = {
     "SCHEMA": "agenda_django_server.schema.schema"
 }
-
-
-
-
 
 
 # Debug
