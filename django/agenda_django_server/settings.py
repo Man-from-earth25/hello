@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'ingredients',
     'graphene_django',
     'django_filters',
     'rest_framework_simplejwt',    
