@@ -11,16 +11,15 @@ class Ingredient(models.Model):
     category = models.ForeignKey(
         Category, related_name="ingredients", on_delete=models.CASCADE
     )
-
     def __str__(self):
         return self.name
-        
-        
-        
-        
+   
+   
+
+
 class Students(models.Model): 
     name = models.CharField(max_length=100)
-    stars = models.IntegerField()
+    stars = modelsntegerField()
     age = models.IntegerField()
     email = models.CharField(max_length=100)
     Comment = models.CharField(max_length=100)
