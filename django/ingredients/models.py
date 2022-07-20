@@ -19,7 +19,7 @@ class Ingredient(models.Model):
 
 class Students(models.Model): 
     name = models.CharField(max_length=100)
-    stars = modelsntegerField()
+    stars = models.IntegerField();
     age = models.IntegerField()
     email = models.CharField(max_length=100)
     Comment = models.CharField(max_length=100)
