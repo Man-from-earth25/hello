@@ -2,9 +2,6 @@
 
 // Imports
 import { body,variable, variable_logger } from './variable.js';
-// import { navbar,navbar_logger } from './component/Navbar/Navbar.js';
-// import { profile } from './component/Navbar/profile.js';
-// import { responsive } from './component/Navbar/Responsive.js';
 import { q,qa } from './dom.js';
 
 
@@ -264,17 +261,6 @@ const profile = () => {
 
 
 
-// Responsive
-// const responsive = () => {
-    
-//     // Variables
-//     const body = q('body');
-//     const main = q('main');
-    
-
-//     return console.log('Hi Responsive File')
-// };
-// ReSponsive 
 
 
 
@@ -284,8 +270,6 @@ const profile = () => {
 console.log('Javascript is Working');
 navbar();
 profile();
-// responsive();
-// console.log(body.childElementCount);
 
 
 
