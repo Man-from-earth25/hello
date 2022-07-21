@@ -3,9 +3,7 @@ let element_length;
 
 // Functions
 const CLICK_CLEANER_CODE = ({ ELEMENT, FUNCTION }) => {
-    
     element_length = ELEMENT.length;
-    
     if (element_length > 1) {
         
         if(ELEMENT == null) console.log('Click Listner');;

@@ -28,7 +28,7 @@
     height: 100%;
     
     
-    z-index: 10000000;
+    z-index: 1000;
 }
 .pnt_it1 ion-icon[name="close"],
 #pnt_it5 ion-icon[name="sunny"] {
@@ -471,7 +471,7 @@
     }
     .navbar{
         
-        z-index: 100000;
+        z-index: 10000;
     }
     
 
