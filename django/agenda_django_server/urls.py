@@ -11,13 +11,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     
-    path('a', admin.site.urls),
-    path('blockchain/', include('blockchain.urls')),
-    path("graphql/", csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    path('', admin.site.urls),
+    path('blockchain', include('blockchain.urls')),
+    path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
     
-
-
-
 
 ]
 
