@@ -218,8 +218,7 @@ const navbar = () => {
         
         return console.log('Hi bro Profile!!!')
     };
-
-
+    profile();
     return console.log('Hi from Navbar')
 };
 

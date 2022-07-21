@@ -1720,3 +1720,11 @@ main > * {
     
     position: static;
 } */
+
+body,
+main,
+main > *{
+    
+    background: #202224;
+    
+}
