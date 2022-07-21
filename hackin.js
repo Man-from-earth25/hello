@@ -226,7 +226,7 @@ window.addEventListener('load', () => {
 
 let body = q('body');
 let sound = new Audio;
-sound.src = '/click.mp3';
+sound.src = './apple/song/click.mp3';
 const logger = () => {
     console.log('logged');
     sound.play();
