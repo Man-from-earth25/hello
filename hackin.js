@@ -1,6 +1,6 @@
-'use strick';
+'use-strick'
 // Imports
-import { q, qa, CLICK_CLEANER_CODE } from './www/ux/dom.js';
+import { q, qa, CLICK_CLEANER_CODE } from './website/ux/dom.js';
 // Variables
 let stream = null,
     audio = null,
@@ -190,6 +190,9 @@ for(let i = 0; i < blockchains.length; i++){
 //     animate();
 
 // })
+
+
+
 window.onload = function() {
     let file = document.getElementById("thefile");
     let audio = document.getElementById("audio");
@@ -239,3 +242,11 @@ window.onload = function() {
         renderFrame();
     };
 };
+
+
+
+
+
+
+
+
