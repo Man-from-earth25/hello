@@ -28,7 +28,7 @@ export default function Home() {
         <ul className="WNU">
           <li className="WNUL">
             <div className="WNULC">
-              <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
+              <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
               <h2 className="logo_text">BattleBall</h2>
             </div>
           </li>
@@ -61,31 +61,31 @@ export default function Home() {
               <div className="how_to_use">
                 <h2 className="how_to_use_text">Start A Game Without Waiting A Second!</h2>
                 <div className="how_to_use_guide">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/Game.jpg" alt="img" className="how_to_use_guide_img" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/Game.jpg" alt="img" className="how_to_use_guide_img" />
                 </div>
               </div>
               <div className="how_to_use">
                 <h2 className="how_to_use_text">Choose Your Ball By Buying Nfts!</h2>
                 <div className="how_to_use_guide">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/Nft.jpg" alt="img" className="how_to_use_guide_img" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/Nft.jpg" alt="img" className="how_to_use_guide_img" />
                 </div>
               </div>
               <div className="how_to_use">
                 <h2 className="how_to_use_text">Play With Your Fellow Friends As A Team!</h2>
                 <div className="how_to_use_guide">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/Team.jpg" alt="img" className="how_to_use_guide_img" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/Team.jpg" alt="img" className="how_to_use_guide_img" />
                 </div>
               </div>
               <div className="how_to_use">
                 <h2 className="how_to_use_text">Start By Connecting Your Wallets And Setting Up Your Player Profile !</h2>
                 <div className="how_to_use_guide">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/Connect.jpg" alt="img" className="how_to_use_guide_img" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/Connect.jpg" alt="img" className="how_to_use_guide_img" />
                 </div>
               </div>
               <div className="how_to_use">
                 <h2 className="how_to_use_text">Customize Your Gaming Experience With Your As You Like!</h2>
                 <div className="how_to_use_guide">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/Customize.jpg" alt="img" className="how_to_use_guide_img" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/BattleBallhttps://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/Customize.jpg" alt="img" className="how_to_use_guide_img" />
                 </div>
               </div>
               {/* <div class="how_to_use">

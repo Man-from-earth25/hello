@@ -49,7 +49,7 @@ export default function Home() {
             <ul id="navbar_ul" className="navbar_ul">
               <div className="navbar_left" id="navbar_left">
                 <div className="logo_container potla_poda_logo">
-                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
                   <h2 className="logo_text">BattleBoll</h2>
                 </div>
               </div>
@@ -93,13 +93,13 @@ export default function Home() {
                   <div className="settings_container_right">
                     <div className="dropdown blockchain_dropdown network">
                       <div className="dropdown_select">
-                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" className="network_img network_dropdown_result" />
+                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/etherium.jpg" alt="e" className="network_img network_dropdown_result" />
                       </div>
                       <div className="dropdown_menu">
-                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="network_img" />
-                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/bitcoin.jpg" alt="e" className="network_img" />
-                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/polygon.jpg" alt="e" className="network_img" />
-                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/solana.jpg" alt="e" className="network_img" />
+                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/avalanche.jpg" alt="e" className="network_img" />
+                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/bitcoin.jpg" alt="e" className="network_img" />
+                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/polygon.jpg" alt="e" className="network_img" />
+                        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/solana.jpg" alt="e" className="network_img" />
                       </div>
                     </div>
                     <div className="dropdown game_crypto_amount crypto">

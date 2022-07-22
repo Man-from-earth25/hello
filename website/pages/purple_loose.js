@@ -47,7 +47,7 @@ export default function Home() {
         <ul id="navbar_ul" className="navbar_ul">
           <div className="navbar_left" id="navbar_left">
             <div className="logo_container potla_poda_logo">
-              <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
+              <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
               <h2 className="logo_text">BattleBoll</h2>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Home() {
                 </div>
                 <div className="battlebol_game_center_circle" />
                 <div className="battlebol_game_center_line" />
-                <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" className="battlebol_game_center_img" />
+                <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello/website/public/blockchain/etherium.jpg" alt="e" className="battlebol_game_center_img" />
                 <div className="game_vs_detals_left"> 1vs1Ranked </div>
                 <div className="game_vs_detals_left game_vs_detals_right"> 1vs1Ranked </div>
               </div>
