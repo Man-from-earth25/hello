@@ -140,108 +140,105 @@ for(let i = 0; i < blockchains.length; i++){
     console.log(blockchains[i].name);
     
 }
-// window.addEventListener('load', () => {
-
-//     const canvas = q('canvas');
-//     const snail = q('.snail');
-//     const ctx = canvas.getContext('2d');
-
-//     canvas.height = window.innerHeight;
-//     canvas.width = window.innerWidth;
-
-//     class Bar {
-//         constructor({ x, y, height, width, color, index }) {
-//             this.x = x;
-//             this.y = y;
-//             this.height = height;
-//             this.width = width;
-//             this.color = color;
-//             this.index = index;
+// window.onload = function() {
+//     let file = document.getElementById("thefile");
+//     let audio = document.getElementById("audio");
+//     let hue = 0;
+//     file.onchange = function() {
+//         let files = this.files;
+//         console.log(files);
+//         console.log(files[0].name);
+//         audio.src = URL.createObjectURL(files[0]);
+//         audio.load();
+//         audio.play();
+//         let context = new AudioContext();
+//         let src = context.createMediaElementSource(audio);
+//         let analyser = context.createAnalyser();
+//         let canvas = document.getElementById("canvas");
+//         canvas.width = window.innerWidth;
+//         canvas.height = window.innerHeight;
+//         let ctx = canvas.getContext("2d");
+//         src.connect(analyser);
+//         analyser.connect(context.destination);
+//         analyser.fftSize = 256;
+//         let bufferLength = analyser.frequencyBinCount;
+//         let dataArray = new Uint8Array(bufferLength);
+//         let WIDTH = canvas.width;
+//         let HEIGHT = canvas.height;
+//         let barWidth = (WIDTH / bufferLength) * 2;
+//         let barHeight;
+//         let x = 0;
+//         function renderFrame() {
+//             requestAnimationFrame(renderFrame);
+//             x = 0;
+//             analyser.getByteFrequencyData(dataArray);
+//             ctx.fillStyle = '#ffffff';
+//             ctx.fillRect(0, 0, WIDTH, HEIGHT);
+//             for (let i = 0; i < bufferLength; i++) {
+//                 barHeight = dataArray[i] * 2.5;
+//                 let r = barHeight + (25 * (i / bufferLength));
+//                 let g = 250 * (i / bufferLength);
+//                 let b = 50;
+//                 let color = "rgb(" + r + "," + g + "," + b + ")";
+//                 ctx.fillStyle = color;
+//                 ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+//                 x += barWidth + 1;
+//             }
 //         }
-//         update(micInput) {
-//             this.height = micInput;
-//         }
-//         draw({ context, volume }) {
-//             context.fillStyle = this.color;
-//             context.fillRect(this.x, this.y, this.height, this.width);
-//         }
-//     }
+//         audio.play();
+//         renderFrame();
+//     };
+// };
+window.addEventListener('load', () => {
 
-//     const bar1 = new Bar({
-//         x: 50,
-//         y: 200,
-//         height: 300,
-//         width: 100,
-//         color: 'red',
-//         index: 1,
-//     });
+    const canvas = q('canvas');
+    const snail = q('.snail');
+    const ctx = canvas.getContext('2d');
 
-//     const animate = () => {
-        
-//         ctx.clearRect(0, 0, canvas.height, canvas.width);
-//         // console.log('animate');
-//         bar1.draw({
-//             context: ctx,
-//             volume: 1,
-//         });
-//         // ..
-//         requestAnimationFrame(animate);
-//     }
-//     animate();
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
 
-// })
-
-
-
-window.onload = function() {
-    let file = document.getElementById("thefile");
-    let audio = document.getElementById("audio");
-    let hue = 0;
-    file.onchange = function() {
-        let files = this.files;
-        console.log(files);
-        console.log(files[0].name);
-        audio.src = URL.createObjectURL(files[0]);
-        audio.load();
-        audio.play();
-        let context = new AudioContext();
-        let src = context.createMediaElementSource(audio);
-        let analyser = context.createAnalyser();
-        let canvas = document.getElementById("canvas");
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        let ctx = canvas.getContext("2d");
-        src.connect(analyser);
-        analyser.connect(context.destination);
-        analyser.fftSize = 256;
-        let bufferLength = analyser.frequencyBinCount;
-        let dataArray = new Uint8Array(bufferLength);
-        let WIDTH = canvas.width;
-        let HEIGHT = canvas.height;
-        let barWidth = (WIDTH / bufferLength) * 2;
-        let barHeight;
-        let x = 0;
-        function renderFrame() {
-            requestAnimationFrame(renderFrame);
-            x = 0;
-            analyser.getByteFrequencyData(dataArray);
-            ctx.fillStyle = '#ffffff';
-            ctx.fillRect(0, 0, WIDTH, HEIGHT);
-            for (let i = 0; i < bufferLength; i++) {
-                barHeight = dataArray[i] * 2.5;
-                let r = barHeight + (25 * (i / bufferLength));
-                let g = 250 * (i / bufferLength);
-                let b = 50;
-                let color = "rgb(" + r + "," + g + "," + b + ")";
-                ctx.fillStyle = color;
-                ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-                x += barWidth + 1;
-            }
+    class Bar {
+        constructor({ x, y, height, width, color, index }) {
+            this.x = x;
+            this.y = y;
+            this.height = height;
+            this.width = width;
+            this.color = color;
+            this.index = index;
         }
-        audio.play();
-        renderFrame();
-    };
-};
+        update(micInput) {
+            this.height = micInput;
+        }
+        draw({ context, volume }) {
+            context.fillStyle = this.color;
+            context.fillRect(this.x, this.y, this.height, this.width);
+        }
+    }
+
+    const bar1 = new Bar({
+        x: 50,
+        y: 200,
+        height: 300,
+        width: 100,
+        color: 'red',
+        index: 1,
+    });
+
+    const animate = () => {
+        
+        ctx.clearRect(0, 0, canvas.height, canvas.width);
+        console.log('animate');
+        bar1.draw({
+            context: ctx,
+            volume: 1,
+        });
+        // ..
+        requestAnimationFrame(animate);
+    }
+    animate();
+
+})
 
 
 
