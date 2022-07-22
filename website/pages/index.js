@@ -50,7 +50,7 @@ export default function Home() {
                   
               </li> */}
         {/* <div class="logo_container">
-                  <img src="./public/blockchain/avalanche.jpg" alt="e" class="logo">
+                  <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" class="logo">
                   <h2 class="logo_text">BattleBall</h2>
               </div> */}
         {/* <li class="player_banner pnt_li navbar_list address_list blockchain_address_nav navbar_li pnt_li4">
@@ -140,7 +140,7 @@ export default function Home() {
       </div>
       <div className="navbar_center" id="navbar_center">
         <div className="logo_container">
-          <img src="./public/blockchain/avalanche.jpg" alt="e" className="logo" />
+          <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
           <h2 className="logo_text">BattleBoll</h2>
         </div>
         <h2 className="NT">Logo</h2>
@@ -150,7 +150,7 @@ export default function Home() {
                   
                   <li class="pnt_li navbar_list address_list blockchain_address_nav navbar_li pnt_li4">
                       
-                      <img src="./public/wallet/metamask.jpg" alt="e" class="blockchain_address_wallet">
+                      <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/wallet/metamask.jpg" alt="e" class="blockchain_address_wallet">
                       <h3 class="blockchain_address">Address</h3>
                       <div class="blockchain_address_network"></div>
                       <h2 class="NT">Blockchain Address</h2>
@@ -159,7 +159,7 @@ export default function Home() {
                   </li>
                   <li class="pnt_li navbar_list balance_list blockchain_balance_nav navbar_li pnt_li4">
                       
-                      <img src="./public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name">
+                      <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name">
                       <h3 class="blockchain_balance">Balance</h3>
                       <ion-icon name="chevron-down-outline"></ion-icon>
                       <h2 class="NT">Blockchain Balance</h2>
@@ -170,7 +170,7 @@ export default function Home() {
               </div> */}
         {/* <li class="pnt_li navbar_list address_list blockchain_address_nav navbar_li pnt_li4">
                       
-                      <img src="./public/wallet/metamask.jpg" alt="e" class="blockchain_address_wallet">
+                      <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/wallet/metamask.jpg" alt="e" class="blockchain_address_wallet">
                       <h3 class="blockchain_address">Address</h3>
                       <div class="blockchain_address_network"></div>
                       <h2 class="NT">Blockchain Address</h2>
@@ -178,14 +178,14 @@ export default function Home() {
                   </li> */}
         {/* <li class="pnt_li navbar_list balance_list blockchain_balance_nav navbar_li pnt_li4">
                       
-                      <img src="./public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name">
+                      <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name">
                       <h3 class="blockchain_balance">Balance</h3>
                       <ion-icon name="chevron-down-outline"></ion-icon>
                       <h2 class="NT">Blockchain Balance</h2>
                       
                   </li> */}
         <li className="madarchod_thailand_launch_button_container pnt_li navbar_list balance_list blockchain_balance_nav navbar_li pnt_li4">
-          {/* <img src="./public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name"> */}
+          {/* <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" class="blockchain_provider_name"> */}
           <Link passHref href='connect'>
             <h3 className="madarchod_thailand_launch_button_item">Launch App</h3>
           
@@ -717,7 +717,7 @@ export default function Home() {
             </div>
           </div>
           <div className="NDPCGDTC">
-            <img src="./public/blockchain/etherium.jpg" alt="e" className="NDPCGDTCL" />
+            <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/etherium.jpg" alt="e" className="NDPCGDTCL" />
             <h3 className="NDPCGDTCN">Manfromearth25</h3>
             <h3 className="NDPCGDTCE">manfromearth25@gmail.com</h3>
             <h3 className="NDPCGDTCA">QW4Q4W5YE7H8DI4JFEPOM</h3>
@@ -1429,7 +1429,7 @@ export default function Home() {
         <h1 className="navbar_scan_container_ul_li_text NDACULT">
           Scan to explore
         </h1>
-        <img src="./public/blockchain/solana.jpg" alt="e" className="navbar_scan_container_ul_li_img NDACULI" />
+        <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/solana.jpg" alt="e" className="navbar_scan_container_ul_li_img NDACULI" />
       </li>
     </ul>
   </nav>

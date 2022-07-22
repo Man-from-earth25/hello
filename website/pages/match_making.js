@@ -48,7 +48,7 @@ export default function Home() {
         <ul id="navbar_ul" className="navbar_ul">
           <div className="navbar_left" id="navbar_left">
             <div className="logo_container potla_poda_logo">
-              <img src="./public/blockchain/avalanche.jpg" alt="e" className="logo" />
+              <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
               <h2 className="logo_text">BattleBoll</h2>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="player_name_container nft_container">
               <h1>Matchmaking...</h1>
               <div className="matchmaking_center_logo">
-                <img src="./public/battlebol/disco.png" alt="e" className="logo" />
+                <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" className="logo" />
               </div>
               <ion-icon name="ellipsis-horizontal-outline" />
             </div>

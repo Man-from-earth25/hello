@@ -21,10 +21,10 @@
 @import url(./component/freefire/freefire_bottom.css);
 
 /* Welcome page :) */
-/* @import url(./page/welcome.css); */
+@import url(./page/welcome.css);
 
 /* Thailand */
-/* @import url(./ui/component/thailand/thailand_ui_1o9.css); */
+@import url(./ui/component/thailand/thailand_ui_1o9.css);
 
 *,*::before,*::after{
     /* background: var(--X-bg); */

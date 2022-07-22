@@ -48,7 +48,7 @@ export default function Home() {
       <nav id="navbar N" className="navbar ">
         <ul id="navbar_ul" className="navbar_ul">
           <div className="navbar_left" id="navbar_left">
-            <div className="logo_container potla_poda_logo"> <img src="./public/blockchain/avalanche.jpg" alt="e" className="logo" />
+            <div className="logo_container potla_poda_logo"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
               <h2 className="logo_text">BattleBoll</h2> </div>
           </div>
           <div className="navbar_center" id="navbar_center"> </div>
@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="nfts">
                   <div className="nfts_top">
                     <h1 className="nft_name">Disco Ball ⭐⭐</h1>
-                    <div className="nfts_top_details"> <img src="./public/battlebol/disco.png" alt="e" />
+                    <div className="nfts_top_details"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" />
                       <div className="nfts_top_details_bottom">
                         <h1 className="nft_rararity">Rare</h1>
                         <h1 className="nft_level">Level9</h1> </div>
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="nfts">
                   <div className="nfts_top">
                     <h1 className="nft_name">Disco Ball ⭐⭐</h1>
-                    <div className="nfts_top_details"> <img src="./public/battlebol/disco.png" alt="e" />
+                    <div className="nfts_top_details"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" />
                       <div className="nfts_top_details_bottom">
                         <h1 className="nft_rararity">Rare</h1>
                         <h1 className="nft_level">Level9</h1> </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="nfts">
                   <div className="nfts_top">
                     <h1 className="nft_name">Disco Ball ⭐⭐</h1>
-                    <div className="nfts_top_details"> <img src="./public/battlebol/disco.png" alt="e" />
+                    <div className="nfts_top_details"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" />
                       <div className="nfts_top_details_bottom">
                         <h1 className="nft_rararity">Rare</h1>
                         <h1 className="nft_level">Level9</h1> </div>
@@ -113,7 +113,7 @@ export default function Home() {
                 <div className="nfts">
                   <div className="nfts_top">
                     <h1 className="nft_name">Silver Ball ⭐⭐⭐</h1>
-                    <div className="nfts_top_details"> <img src="./public/battlebol/silver.png" alt="e" />
+                    <div className="nfts_top_details"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/silver.png" alt="e" />
                       <div className="nfts_top_details_bottom">
                         <h1 className="nft_rararity">Rare</h1>
                         <h1 className="nft_level">Level9</h1> </div>
@@ -126,7 +126,7 @@ export default function Home() {
                 <div className="nfts">
                   <div className="nfts_top">
                     <h1 className="nft_name">Disco Ball ⭐⭐</h1>
-                    <div className="nfts_top_details"> <img src="./public/battlebol/disco.png" alt="e" />
+                    <div className="nfts_top_details"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" />
                       <div className="nfts_top_details_bottom">
                         <h1 className="nft_rararity">Rare</h1>
                         <h1 className="nft_level">Level9</h1> </div>

@@ -45,7 +45,7 @@ export default function Home() {
       <nav id="navbar N" className="navbar ">
         <ul id="navbar_ul" className="navbar_ul">
           <div className="navbar_left" id="navbar_left">
-            <div className="logo_container potla_poda_logo"> <img src="./public/blockchain/avalanche.jpg" alt="e" className="logo" />
+            <div className="logo_container potla_poda_logo"> <img src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/blockchain/avalanche.jpg" alt="e" className="logo" />
               <h2 className="logo_text">BattleBoll</h2> </div>
           </div>
           <div className="navbar_center" id="navbar_center"> </div>
@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -86,7 +86,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -102,7 +102,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -154,7 +154,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -162,7 +162,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
@@ -170,7 +170,7 @@ export default function Home() {
                 <div className="matchup_nfts">
                   <div className="matchup_nfts_top">
                     <h1>Disco Bol</h1> </div>
-                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="./public/battlebol/disco.png" alt="e" /> </div>
+                  <div className="matchup_nfts_center"> <img className="matchup_nfts_center_img" src="https://cdn.jsdelivr.net/gh/Man-from-earth25/hello@website/public/battlebol/disco.png" alt="e" /> </div>
                   <div className="matchup_nfts_bottom">
                     <h1>Rare</h1>
                     <h1>Level9</h1> </div>
