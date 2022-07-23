@@ -1,4 +1,6 @@
 'use-strick'
+
+
 // Imports
 import { q, qa, CLICK_CLEANER_CODE } from './website/ux/dom.js';
 // Variables
@@ -12,6 +14,8 @@ let stream = null,
     recorder = null;
 // Dom Variables
 const main = q('main');
+const song_selector_input = q('.song_selector_input');
+const song_player = q('.song_player');
 const mainChild = qa('main > *,.hackIn_songs_visualizer > *');
 if (main == null) console.log('Gonna do it in hard way');
 console.log('Good html practice!');
@@ -140,6 +144,7 @@ for(let i = 0; i < blockchains.length; i++){
     console.log(blockchains[i].name);
     
 }
+// Canvas
 // window.onload = function() {
 //     let file = document.getElementById("thefile");
 //     let audio = document.getElementById("audio");
@@ -215,7 +220,6 @@ window.addEventListener('load', () => {
             context.fillRect(this.x, this.y, this.height, this.width);
         }
     }
-
     const bar1 = new Bar({
         x: 50,
         y: 200,
@@ -224,19 +228,63 @@ window.addEventListener('load', () => {
         color: 'red',
         index: 1,
     });
-
     const animate = () => {
         
         ctx.clearRect(0, 0, canvas.height, canvas.width);
-        console.log('animate');
+        // console.log('animate');
         bar1.draw({
             context: ctx,
             volume: 1,
         });
-        // ..
         requestAnimationFrame(animate);
     }
     animate();
+    if(song_selector_input == null && song_player == null) console.log('No Song');
+    song_selector_input.onchange = function() {
+        let files = this.files;
+        console.log(files);
+        console.log(files[0].name);
+        song_player.src = URL.createObjectURL(files[0]);
+        song_player.load();
+        song_player.play();
+        let context = new AudioContext();
+        let src = context.createMediaElementSource(song_player);
+        let analyser = context.createAnalyser();
+        let bufferLength = analyser.frequencyBinCount;
+        let dataArray = new Uint8Array(bufferLength);
+        let WIDTH = canvas.width;
+        let HEIGHT = canvas.height;
+        let barWidth = (WIDTH / bufferLength) * 2;
+        let barHeight;
+        src.connect(analyser);
+        analyser.connect(context.destination);
+        analyser.fftSize = 256;
+        // song_player.play();
+        // function renderFrame() {
+        //     requestAnimationFrame(renderFrame);
+        //     x = 0;
+        //     analyser.getByteFrequencyData(dataArray);
+        //     ctx.fillStyle = '#ffffff';
+        //     ctx.fillRect(0, 0, WIDTH, HEIGHT);
+        //     for (let i = 0; i < bufferLength; i++) {
+        //         barHeight = dataArray[i] * 2.5;
+        //         let r = barHeight + (25 * (i / bufferLength));
+        //         let g = 250 * (i / bufferLength);
+        //         let b = 50;
+        //         let color = "rgb(" + r + "," + g + "," + b + ")";
+        //         ctx.fillStyle = color;
+        //         ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+        //         x += barWidth + 1;
+        //     }
+        // }
+        // renderFrame();
+        
+        
+        
+        
+        
+        
+    }
 
 })
 

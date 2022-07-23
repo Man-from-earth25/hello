@@ -280,3 +280,13 @@ main{
 
 
 
+
+/* Mobile Portrait */
+@media(min-width:360px) and (max-width: 900px){
+    
+    *{
+        max-width: 360px !important;
+     
+    }
+    
+}
