@@ -6,7 +6,7 @@
 }
 
 #canvas {
-    background: #FFFFFF;
+  background: #FFFFFF;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -23,8 +23,8 @@
   width: calc(100% - 20px);
 } */
 main,body,h1{
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 .hackIn{
     
@@ -33,8 +33,8 @@ main,body,h1{
 }
 .hackIn{
     
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -98,7 +98,6 @@ main,body,h1{
 }
 .hackIn_songs_selecter{
     
-    background: #2C3A51;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,3 +130,54 @@ main,body,h1{
     width: 50%;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media(min-width:360px) and (max-width: 900px){
+    
+    *{
+        
+        background: green;
+        
+        max-width: 360px;
+        
+    }
+    
+}
+/* //////////////////////////// O_o Desktop Start ////////////////////// */
+@media(min-width:900px){
+    *{
+        
+        background: yellow;
+    }
+    
+}
+
+
+
+
+
+/* //////////////////////////// O_o Desktop End ////////////////////// */
+/* xl Desktop */
+/* @media(min-width:900px){
+    *{
+        
+        background: red;
+    }
+    
+} */

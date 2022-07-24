@@ -10,9 +10,9 @@
 /* @import url(./component/bottomnavbar/bottomnavbar.css); */
 @import url(./component/contractus/contract_us.css);
 /* Else */
-/* @import url(./component/FooTer/footer.css); */
+@import url(./component/FooTer/footer.css);
 /* Tailwind Css */
-@import url(./tailwind.css);
+/* @import url(./tailwind.css); */
 /* Variables */
 @import url(./variable.css);
 /* Freefire */
