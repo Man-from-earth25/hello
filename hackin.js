@@ -2,7 +2,7 @@
 
 
 // Imports
-import { q, qa, CLICK_CLEANER_CODE } from './website/ux/dom.js';
+import { q, qa, CLICK } from './website/ux/dom.js';
 // Variables
 let stream = null,
     audio = null,
@@ -132,7 +132,7 @@ const logger = () => {
     sound.play();
     
 }
-CLICK_CLEANER_CODE({
+CLICK({
     
     ELEMENT : body,
     FUNCTION : logger

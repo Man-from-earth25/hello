@@ -1,5 +1,5 @@
 // Imports
-import { q,qa,CLICK_CLEANER_CODE } from '../../dom.js';
+import { q,qa,CLICK } from '../../dom.js';
 
 
 let player_name_page = q('.profile_name_page')

@@ -1,27 +1,23 @@
 // Imports
-import { q,qa,CLICK_CLEANER_CODE } from './dom.js';
-
-
-// let navbar_element = q('.navbar');
+import { q,qa,CLICK } from './dom.js';
+// Varables
+let navbar = q('.navbar');
+// Dom Variables
+const body = q('body');
+const main = q('main');
+const sidebar_dropdowns = qa('.st_main');
+const sidebar_lists = qa('.st');
+const sidebar_toggler = q('#pnt_it1');
+const sidebar = q('.sidebar');
+const theme = q('.theme');
+let connect_button = q('.connect_button');
+let balance_dropdown = q('.balance_list');
+let balance = q('.blockchain_balance');
+let address_dropdown = q('.address_list');
+let address = q('.blockchain_address');
 // Functions
-// if(navbar_element == null) console.log('Navbar Not Found');
-const navbar = () => {
-    
-    
-    // Variables
-    const body = q('body');
-    const main = q('main');
-    const sidebar_dropdowns = qa('.st_main');
-    const sidebar_lists = qa('.st');
-    const sidebar_toggler = q('#pnt_it1');
-    const sidebar = q('.sidebar');
-    const theme = q('.theme');
-    let connect_button = q('.connect_button');
-    let balance_dropdown = q('.balance_list');
-    let balance = q('.blockchain_balance');
-    let address_dropdown = q('.address_list');
-    let address = q('.blockchain_address');
-    
+if(navbar == null) console.log('NavbarLogic Detected');
+const navbar_logic = () => {
     // Profile Drop-down 
     const profile = () => {
         
@@ -46,8 +42,8 @@ const navbar = () => {
         profile_toggler.forEach((profile_togglers)=>{
             profile_togglers.addEventListener('click',()=>{
                 
-                let body1 = profile_container.classList.toggle('active');
-                let body2 = backdrop.classList.toggle('active');
+            let body1 = profile_container.classList.toggle('active');
+            let body2 = backdrop.classList.toggle('active');
                 
                 
             })
@@ -226,18 +222,9 @@ const navbar = () => {
     
     return console.log('Hi Navbar')
 };
-
-
-
-
-
-
-
-
-
 // Exports
 export{
     
-    navbar
+    navbar_logic
     
 }

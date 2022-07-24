@@ -59,7 +59,7 @@
 //         console.warn(e);
 //     }
 // }
-// CLICK_CLEANER_CODE({
+// CLICK({
 //     ELEMENT : start_stream,
 //     FUNCTION : startStreamFunction
 // })
@@ -67,7 +67,7 @@
 // const endStreamFunction = async () => {
 //     console.log('Stream Ended!');
 // }
-// CLICK_CLEANER_CODE({
+// CLICK({
 //     ELEMENT : end_stream,
 //     FUNCTION : endStreamFunction
 // })
